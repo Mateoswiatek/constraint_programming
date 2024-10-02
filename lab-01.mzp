@@ -1,0 +1,20 @@
+{
+    "openFiles": [
+        "data.dzn",
+        "xkcd.mzn",
+        "assignment/assignment.mzn",
+        "data.json",
+        "assignment/assignment.mzc"
+    ],
+    "openTab": 4,
+    "projectFiles": [
+        "assignment/assignment.mzc",
+        "assignment/assignment.mzn",
+        "data.dzn",
+        "data.json",
+        "xkcd.mzn"
+    ],
+    "selectedBuiltinConfigId": "org.gecode.gecode",
+    "selectedBuiltinConfigVersion": "6.3.0",
+    "version": 106
+}
