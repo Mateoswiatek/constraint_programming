@@ -4,7 +4,7 @@ Laboratory created by Mateusz Ślażyński for Constraint Programming course at 
 
 ## Lab Instructions
 
-All instructions are available via [the project wiki](https://gitlab.com/agh-courses/24/wiki/01). 
+All instructions are available via [the project wiki](https://gitlab.com/agh-courses/24/cp/wiki/01). 
 All files required to solve the assignments are already included in the repository.
 
 ## Setup 
