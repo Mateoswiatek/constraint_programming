@@ -20,7 +20,7 @@ var int: total_yumyum;
 % Constraints
 constraint forall(i in menu_items)(order[i] >= 0 /\ order[i] < money_limit div menu_prices[i]);
 constraint total_price = sum([order[i] * menu_prices[i] | i in menu_items]);
-constraint total_price == money_limit;
+constraint total_price <= money_limit;
 constraint total_yumyum = sum([order[i] * yumyum_factors[i] | i in menu_items]);
 
 % Objective
