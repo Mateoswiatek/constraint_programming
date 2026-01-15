@@ -1,0 +1,110 @@
+0000000000000000000000000000000000000000 5f286e0d0cd4f94359f375d5a2d73747770995d5 mswiatek <mswiatek@core-logic.com> 1764759024 +0100	clone: from https://gitlab.com/constraint-programming1321641/project-b-torpedo-scheduling.git
+5f286e0d0cd4f94359f375d5a2d73747770995d5 56317e546bd6b22ebbe714def5ddd3a3a04b3fef mswiatek <mswiatek@core-logic.com> 1764761537 +0100	commit: .
+56317e546bd6b22ebbe714def5ddd3a3a04b3fef c1dc2538b388abbf8c3d6b0bd9c7ed3a17681d58 mswiatek <mswiatek@core-logic.com> 1764762063 +0100	commit: v1
+c1dc2538b388abbf8c3d6b0bd9c7ed3a17681d58 84c5665710236e1194be61d2bd4b627443b12138 mswiatek <mswiatek@core-logic.com> 1764762251 +0100	commit: v1
+84c5665710236e1194be61d2bd4b627443b12138 101b69fc6967fb1f63c2572013980951fc35edc0 mswiatek <mswiatek@core-logic.com> 1764767404 +0100	commit: Best Version
+101b69fc6967fb1f63c2572013980951fc35edc0 70d30323a71300e602103f048828ce5fe1ffc6a8 mswiatek <mswiatek@core-logic.com> 1765119187 +0100	merge origin/main: Fast-forward
+70d30323a71300e602103f048828ce5fe1ffc6a8 019ed6632fcd30e981573250e582411657536c74 mswiatek <mswiatek@core-logic.com> 1765122241 +0100	merge origin/main: Fast-forward
+019ed6632fcd30e981573250e582411657536c74 534bb03d3e960fd309d3c448caa17122b099fb27 mswiatek <mswiatek@core-logic.com> 1765122335 +0100	commit: stage1
+534bb03d3e960fd309d3c448caa17122b099fb27 d05042edc5b66907a879409406de67ed87534f17 mswiatek <mswiatek@core-logic.com> 1765123596 +0100	merge origin/main: Fast-forward
+d05042edc5b66907a879409406de67ed87534f17 039c886a43bceb57a96d07204de87c6b8af07552 mswiatek <mswiatek@core-logic.com> 1765123603 +0100	commit: stage1
+039c886a43bceb57a96d07204de87c6b8af07552 5dcdf099d1635f44c59a50c0e9d7dd4f2b3a674c mswiatek <mswiatek@core-logic.com> 1765128345 +0100	commit: stage1 test
+5dcdf099d1635f44c59a50c0e9d7dd4f2b3a674c 435e28130cce11a2bfffbb809c17d51ac2ba01fc mswiatek <mswiatek@core-logic.com> 1765128371 +0100	merge origin/main: Merge made by the 'ort' strategy.
+435e28130cce11a2bfffbb809c17d51ac2ba01fc dd83cb61d880eb15fa10acd2489564f7b137391b mswiatek <mswiatek@core-logic.com> 1765128693 +0100	commit: wip testing
+dd83cb61d880eb15fa10acd2489564f7b137391b 873774184cfa4a871b5c2a48474494d1eec2ca13 mswiatek <mswiatek@core-logic.com> 1765133446 +0100	commit: testing
+873774184cfa4a871b5c2a48474494d1eec2ca13 dd83cb61d880eb15fa10acd2489564f7b137391b mswiatek <mswiatek@core-logic.com> 1765133524 +0100	reset: moving to HEAD~1
+dd83cb61d880eb15fa10acd2489564f7b137391b d629c94d10208c847dac156b7f0af614803f94f8 mswiatek <mswiatek@core-logic.com> 1765133539 +0100	merge origin/main: Merge made by the 'ort' strategy.
+d629c94d10208c847dac156b7f0af614803f94f8 9de57297b6381cdce97c792244e29916fb32d5ee mswiatek <mswiatek@core-logic.com> 1765133646 +0100	merge origin/main: Fast-forward
+9de57297b6381cdce97c792244e29916fb32d5ee 288b15c202f64c8bf2e4b111271ab89fadec0352 mswiatek <mswiatek@core-logic.com> 1765133656 +0100	commit: 0 6 2370
+288b15c202f64c8bf2e4b111271ab89fadec0352 8a568ed09a3821a8df71a78f1fea09c946660755 mswiatek <mswiatek@core-logic.com> 1765133972 +0100	merge origin/main: Fast-forward
+8a568ed09a3821a8df71a78f1fea09c946660755 486d67acdb8fa9742c19faa94b908a08e66b7f90 mswiatek <mswiatek@core-logic.com> 1765134088 +0100	commit: after teacher tip 0 6 2355
+486d67acdb8fa9742c19faa94b908a08e66b7f90 4423d86e4f1ba26e59b73fd00a46283fee721d20 mswiatek <mswiatek@core-logic.com> 1765135244 +0100	commit: 0 6 2355
+4423d86e4f1ba26e59b73fd00a46283fee721d20 ab20935ff0617fd40505cd769bb5257afc0e46f9 mswiatek <mswiatek@core-logic.com> 1765135454 +0100	commit (merge): Merge remote-tracking branch 'origin/main'
+ab20935ff0617fd40505cd769bb5257afc0e46f9 6f69486d03547bddd4f5e518e3c1b9cb5549eda5 mswiatek <mswiatek@core-logic.com> 1765135469 +0100	commit: delete grade
+6f69486d03547bddd4f5e518e3c1b9cb5549eda5 6ce9b3c4d65981829e8843c14aa2fa3f5107f73f mswiatek <mswiatek@core-logic.com> 1765135572 +0100	pull https://oauth2:glpat-HcqFdor_hvu4V5a-4CInDG86MQp1Ojg4eDVzCw.01.120rt3zm2@gitlab.com/constraint-programming1321641/project-b-torpedo-scheduling.git main --rebase: Fast-forward
+6ce9b3c4d65981829e8843c14aa2fa3f5107f73f 26f41548d726f00b6c9d1b01187178fea7a1e70f mswiatek <mswiatek@core-logic.com> 1765135605 +0100	commit: delete grade
+26f41548d726f00b6c9d1b01187178fea7a1e70f d60ceaed3e2542aa0af2cc56f2f492efe70a4aa7 mswiatek <mswiatek@core-logic.com> 1765136869 +0100	merge origin/main: Fast-forward
+d60ceaed3e2542aa0af2cc56f2f492efe70a4aa7 52ed8f38fd81d1d0b8885541f748a3c4a9ed41e3 mswiatek <mswiatek@core-logic.com> 1765136924 +0100	commit: 0 6 2340 with multiple torpedos
+52ed8f38fd81d1d0b8885541f748a3c4a9ed41e3 58833b7e49e02a50cc52e4c01f6e958818029e1b mswiatek <mswiatek@core-logic.com> 1765137266 +0100	commit: 0 6 2340 with multiple torpedos
+58833b7e49e02a50cc52e4c01f6e958818029e1b e8229adcdfb4e27219b98a6ecb8e597ee5f20bce mswiatek <mswiatek@core-logic.com> 1765137278 +0100	merge origin/main: Merge made by the 'ort' strategy.
+e8229adcdfb4e27219b98a6ecb8e597ee5f20bce a356ddc03dc0836e14659687c12b462d16c157d4 mswiatek <mswiatek@core-logic.com> 1765137339 +0100	commit: trollololoo
+a356ddc03dc0836e14659687c12b462d16c157d4 a1668b19ef8d49a028febf9eba41ac4a553b2947 mswiatek <mswiatek@core-logic.com> 1765137350 +0100	merge origin/main: Merge made by the 'ort' strategy.
+a1668b19ef8d49a028febf9eba41ac4a553b2947 1cf3d06b27efbad9fd79da6c6eb40900f1138b11 mswiatek <mswiatek@core-logic.com> 1765137705 +0100	commit: fixed
+1cf3d06b27efbad9fd79da6c6eb40900f1138b11 f5b9431c797385980f1add148e648705004df98f mswiatek <mswiatek@core-logic.com> 1765137791 +0100	commit (merge): Merge remote-tracking branch 'origin/main'
+f5b9431c797385980f1add148e648705004df98f f74e9d566668b8eac6a273e2c17fe12819066b69 mswiatek <mswiatek@core-logic.com> 1765138240 +0100	commit: add readme and sols.
+f74e9d566668b8eac6a273e2c17fe12819066b69 4f3ba022133529681c28f5eb21f110e82369aea2 mswiatek <mswiatek@core-logic.com> 1765138445 +0100	commit: update best sol 0 6 2250
+4f3ba022133529681c28f5eb21f110e82369aea2 c5e86bcdd505088e113a1185317b47c1c1c73b44 mswiatek <mswiatek@core-logic.com> 1765138457 +0100	merge origin/main: Merge made by the 'ort' strategy.
+c5e86bcdd505088e113a1185317b47c1c1c73b44 961db4f0a3acb62f252e086cb22c9cd841923850 mswiatek <mswiatek@core-logic.com> 1765138746 +0100	commit: init opt Torpedo usage
+961db4f0a3acb62f252e086cb22c9cd841923850 ab0fb04eebf92c295c31297357209eea5d0be412 mswiatek <mswiatek@core-logic.com> 1765138762 +0100	merge origin/main: Merge made by the 'ort' strategy.
+ab0fb04eebf92c295c31297357209eea5d0be412 b6734c66d9443083d52284e755310cbb8ef22f4a mswiatek <mswiatek@core-logic.com> 1765139687 +0100	merge origin/main: Fast-forward
+b6734c66d9443083d52284e755310cbb8ef22f4a 5f878fb4c1a2ffadba6e141ff7c8852366701e98 mswiatek <mswiatek@core-logic.com> 1765139896 +0100	commit: opt stage2 0 6 1065
+5f878fb4c1a2ffadba6e141ff7c8852366701e98 9b4ee42f2b7b07f4a15af27b9b4526c4ec4aea98 mswiatek <mswiatek@core-logic.com> 1765139935 +0100	commit (merge): Merge remote-tracking branch 'origin/main'
+9b4ee42f2b7b07f4a15af27b9b4526c4ec4aea98 e5fe249977872e5e32ad6b7b5d8040bf20c3ed65 mswiatek <mswiatek@core-logic.com> 1765140186 +0100	commit: invalid
+e5fe249977872e5e32ad6b7b5d8040bf20c3ed65 542b823d3d4f40d1242fb38a84a95f28df8acefc mswiatek <mswiatek@core-logic.com> 1765140219 +0100	merge origin/main: Merge made by the 'ort' strategy.
+542b823d3d4f40d1242fb38a84a95f28df8acefc d7c786dbe76c419049a42f8d511299d10a2e4f01 mswiatek <mswiatek@core-logic.com> 1765141054 +0100	commit: test stage2 0 6 1050
+d7c786dbe76c419049a42f8d511299d10a2e4f01 d19d7fb81057dc815a174c36653c14edb14b9bc6 mswiatek <mswiatek@core-logic.com> 1765141064 +0100	merge origin/main: Merge made by the 'ort' strategy.
+d19d7fb81057dc815a174c36653c14edb14b9bc6 00a3261029c47533faa448eb0277a4f7ca46b863 mswiatek <mswiatek@core-logic.com> 1765141992 +0100	merge origin/main: Fast-forward
+00a3261029c47533faa448eb0277a4f7ca46b863 b75dda6fa63c4e5901e7335a8eb3b172829af117 mswiatek <mswiatek@core-logic.com> 1765142011 +0100	merge origin/main: Fast-forward
+b75dda6fa63c4e5901e7335a8eb3b172829af117 3c007afd4a51faee35d5801f904ca618c3dd1bcb mswiatek <mswiatek@core-logic.com> 1765142074 +0100	commit: fixes after cleanup
+3c007afd4a51faee35d5801f904ca618c3dd1bcb 8738e9d62e0cd3060b215be3a2e2311903f011ec mswiatek <mswiatek@core-logic.com> 1765142207 +0100	commit: try 0 6 1065
+8738e9d62e0cd3060b215be3a2e2311903f011ec 71cad102fda3574167f0937f45faf0dc7b4ce3d3 mswiatek <mswiatek@core-logic.com> 1765142219 +0100	merge origin/main: Merge made by the 'ort' strategy.
+71cad102fda3574167f0937f45faf0dc7b4ce3d3 a51a46f2b1aa7d8d58e3b1fbaf48cf811e1f5329 mswiatek <mswiatek@core-logic.com> 1765142337 +0100	merge origin/main: Fast-forward
+a51a46f2b1aa7d8d58e3b1fbaf48cf811e1f5329 c5c561753227b09a4b06ef6c790ada81f817ed08 mswiatek <mswiatek@core-logic.com> 1765142355 +0100	commit: fix optTorpedo stage1 sol to valid sol.
+c5c561753227b09a4b06ef6c790ada81f817ed08 edcd2f6f3044e37e460906150e8f34fd3fbbbbfb mswiatek <mswiatek@core-logic.com> 1765142596 +0100	merge origin/main: Merge made by the 'ort' strategy.
+edcd2f6f3044e37e460906150e8f34fd3fbbbbfb f82d61ca039f7b33f7aca0d20eaddf0d80e36a1a mswiatek <mswiatek@core-logic.com> 1765142629 +0100	commit: Opt torpedo graph 0 6 2070
+f82d61ca039f7b33f7aca0d20eaddf0d80e36a1a cca68611cb45d752e78a0ac522d3a7597b809515 mswiatek <mswiatek@core-logic.com> 1765142731 +0100	commit: Opt torpedo graph 0 6 2070 Valid
+cca68611cb45d752e78a0ac522d3a7597b809515 ba90e7eea41f8460a37bbbec29fa2c67ce24e1b5 mswiatek <mswiatek@core-logic.com> 1765142744 +0100	merge origin/main: Merge made by the 'ort' strategy.
+ba90e7eea41f8460a37bbbec29fa2c67ce24e1b5 71b88930d6a5f9ab5ffe42f35ac3d9aba1d5f04f mswiatek <mswiatek@core-logic.com> 1765143350 +0100	merge origin/main: Fast-forward
+71b88930d6a5f9ab5ffe42f35ac3d9aba1d5f04f 19a09319bf178f027f8804820e74e00ee38f886f mswiatek <mswiatek@core-logic.com> 1765143401 +0100	commit: Opt max_concurrent_trips 0 5 2430
+19a09319bf178f027f8804820e74e00ee38f886f 3729358ec16bfe29213eb4c2b087ba34dc2d4e5c mswiatek <mswiatek@core-logic.com> 1765143473 +0100	commit: Opt max_concurrent_trips 0 5 2430
+3729358ec16bfe29213eb4c2b087ba34dc2d4e5c ef025061bd9c9eec4261db02315eb2d7888c100e mswiatek <mswiatek@core-logic.com> 1765143494 +0100	commit (amend): Opt max_concurrent_trips 0 5 2430 valid
+ef025061bd9c9eec4261db02315eb2d7888c100e 0fef2bf2e8ef2d95b9c412bf94c8e39cd79a657a mswiatek <mswiatek@core-logic.com> 1765143515 +0100	merge origin/main: Merge made by the 'ort' strategy.
+0fef2bf2e8ef2d95b9c412bf94c8e39cd79a657a 41513fa797490f0c36822aeb22062b4be81b88e6 mswiatek <mswiatek@core-logic.com> 1765143774 +0100	commit: add full opt
+41513fa797490f0c36822aeb22062b4be81b88e6 c3dbd58be8b208d3908e9101c06c8f46845cb6cd mswiatek <mswiatek@core-logic.com> 1765143787 +0100	merge origin/main: Merge made by the 'ort' strategy.
+c3dbd58be8b208d3908e9101c06c8f46845cb6cd ce5360bd9187a6d2fbca46c8aa3e9bf6e0bf699f mswiatek <mswiatek@core-logic.com> 1765143815 +0100	commit: add full opt
+ce5360bd9187a6d2fbca46c8aa3e9bf6e0bf699f 05f1726405fd535e62633d3b52e71ccaceaa2dd9 mswiatek <mswiatek@core-logic.com> 1765143827 +0100	merge origin/main: Merge made by the 'ort' strategy.
+05f1726405fd535e62633d3b52e71ccaceaa2dd9 fa4159df0ba530775b2ed072697f167628247170 mswiatek <mswiatek@core-logic.com> 1765144094 +0100	commit: add full opt
+fa4159df0ba530775b2ed072697f167628247170 30c61571caa073f3f1e5f326d26360d392e3445a mswiatek <mswiatek@core-logic.com> 1765144119 +0100	merge origin/main: Merge made by the 'ort' strategy.
+30c61571caa073f3f1e5f326d26360d392e3445a 3f7753be73b89c4b13275e7b0e9d16249b9aaea0 mswiatek <mswiatek@core-logic.com> 1765144397 +0100	merge origin/main: Fast-forward
+3f7753be73b89c4b13275e7b0e9d16249b9aaea0 0e0bcb4da6d4279449765fc58e99baa549848c85 mswiatek <mswiatek@core-logic.com> 1765147779 +0100	merge origin/main: Fast-forward
+0e0bcb4da6d4279449765fc58e99baa549848c85 54e98cbf4cb97b595e73a408cf5d7200543add10 mswiatek <mswiatek@core-logic.com> 1765148363 +0100	commit: hot start 0 5 2295
+54e98cbf4cb97b595e73a408cf5d7200543add10 ba96c994b087e476193b6c9abffa03cf76cac17b mswiatek <mswiatek@core-logic.com> 1765148427 +0100	commit: hot start 0 5 2295
+ba96c994b087e476193b6c9abffa03cf76cac17b 8ebd12d2ff6698a68ae9b021350d1836771eac04 mswiatek <mswiatek@core-logic.com> 1765148469 +0100	commit (merge): Merge remote-tracking branch 'origin/main'
+8ebd12d2ff6698a68ae9b021350d1836771eac04 22b1f831d56290982f7fb94fb21886518b334791 mswiatek <mswiatek@core-logic.com> 1765148521 +0100	merge origin/main: Fast-forward
+22b1f831d56290982f7fb94fb21886518b334791 5e06782a84bd8f0868af070dbb2e2143c3c1b741 mswiatek <mswiatek@core-logic.com> 1765148565 +0100	commit: hot start 0 5 2295 valid
+5e06782a84bd8f0868af070dbb2e2143c3c1b741 e1a2cb33a94f46c8bce792d0702b689dc15019b5 mswiatek <mswiatek@core-logic.com> 1765148629 +0100	commit: hot start 0 5 2295 valid
+e1a2cb33a94f46c8bce792d0702b689dc15019b5 98c6009f06332df70b72db48bf6cccf68a4bc386 mswiatek <mswiatek@core-logic.com> 1765148640 +0100	merge origin/main: Merge made by the 'ort' strategy.
+98c6009f06332df70b72db48bf6cccf68a4bc386 3bb9d1884a97d95a8a4c2382e3f2bc5bacc44952 mswiatek <mswiatek@core-logic.com> 1765148730 +0100	commit: clean mateusz
+3bb9d1884a97d95a8a4c2382e3f2bc5bacc44952 c8f1212aa353d66ebb1b29fd8bd7eed496a69d78 mswiatek <mswiatek@core-logic.com> 1765148806 +0100	commit: clean old easy sol
+c8f1212aa353d66ebb1b29fd8bd7eed496a69d78 7dd4aa597535dc19e35c8e330f8ff7f5b24ae76d mswiatek <mswiatek@core-logic.com> 1765148990 +0100	merge origin/main: Merge made by the 'ort' strategy.
+7dd4aa597535dc19e35c8e330f8ff7f5b24ae76d c88d02dcd9c0e0e09bd4414f1e11b1d3c52f7a00 mswiatek <mswiatek@core-logic.com> 1765152891 +0100	commit: new < 4 torpedo 0 4 2355
+c88d02dcd9c0e0e09bd4414f1e11b1d3c52f7a00 9790760e7102074a54ca80f04ef5760cbfec6c14 mswiatek <mswiatek@core-logic.com> 1765152920 +0100	merge origin/main: Merge made by the 'ort' strategy.
+9790760e7102074a54ca80f04ef5760cbfec6c14 47fe633181d16b2ce09b3b574a0108a1f9b764c3 mswiatek <mswiatek@core-logic.com> 1765153048 +0100	merge origin/main: Fast-forward
+47fe633181d16b2ce09b3b574a0108a1f9b764c3 4a6247063d88c2c725e7721e59320c6f6c3212d1 mswiatek <mswiatek@core-logic.com> 1765155033 +0100	commit: after fixes 4 torpedo 0 4 2295
+4a6247063d88c2c725e7721e59320c6f6c3212d1 4e25b8f1927f9882017feed5dd616d329fbf9958 mswiatek <mswiatek@core-logic.com> 1765155241 +0100	commit: after fixes 4 torpedo 0 4 2295 valid
+4e25b8f1927f9882017feed5dd616d329fbf9958 59db963bc0b333b9ec3313474c66d1a24a775ae4 mswiatek <mswiatek@core-logic.com> 1765155257 +0100	merge origin/main: Merge made by the 'ort' strategy.
+59db963bc0b333b9ec3313474c66d1a24a775ae4 0bfcbc3f6af4a2a2fe21ba8c332417a8781aeaa2 mswiatek <mswiatek@core-logic.com> 1765156044 +0100	commit: after fixes 4 torpedo 0 4 2295 valid
+0bfcbc3f6af4a2a2fe21ba8c332417a8781aeaa2 5cbaf447fd2c36c7ed247b1e1c30d938a3cf2c5f mswiatek <mswiatek@core-logic.com> 1765156094 +0100	commit: after fixes 4 torpedo 0 4 2295 valid
+5cbaf447fd2c36c7ed247b1e1c30d938a3cf2c5f 4eb9c1677036d29808ede035768de4d910fc6fbe mswiatek <mswiatek@core-logic.com> 1765156110 +0100	merge origin/main: Merge made by the 'ort' strategy.
+4eb9c1677036d29808ede035768de4d910fc6fbe 9a7cf0e6a5946df6e72c801cfe87a4468b885f9a mswiatek <mswiatek@core-logic.com> 1765156308 +0100	commit: after fixes 4 torpedo 0 4 2295 valid add readme 3 torpedos impossible
+9a7cf0e6a5946df6e72c801cfe87a4468b885f9a c3d28de89f6ca83fc97a8cd4814f5eb41689e7bb mswiatek <mswiatek@core-logic.com> 1765156323 +0100	merge origin/main: Merge made by the 'ort' strategy.
+c3d28de89f6ca83fc97a8cd4814f5eb41689e7bb 7a72e70cb4b9fdd0ea5f5528b3f9748d2c471c28 mswiatek <mswiatek@core-logic.com> 1765158629 +0100	commit: 0 4 2205 test reheat and desulf reduction move
+7a72e70cb4b9fdd0ea5f5528b3f9748d2c471c28 01308969190b5f68311551022de815568d806232 mswiatek <mswiatek@core-logic.com> 1765158647 +0100	merge origin/main: Merge made by the 'ort' strategy.
+01308969190b5f68311551022de815568d806232 91642e477159f111c630864a62437d567bf172ba mswiatek <mswiatek@core-logic.com> 1765158733 +0100	commit: 0 4 2205 valid test reheat and desulf reduction move
+91642e477159f111c630864a62437d567bf172ba 90183942a4e2766609252ec6e00ea6acb8d83df3 mswiatek <mswiatek@core-logic.com> 1765158746 +0100	merge origin/main: Merge made by the 'ort' strategy.
+90183942a4e2766609252ec6e00ea6acb8d83df3 93fc33ec8be697967e10f58d4d4df109a60a920d mswiatek <mswiatek@core-logic.com> 1765159891 +0100	commit: 0 4 2235 test A-reheat, perturbation, tabu
+93fc33ec8be697967e10f58d4d4df109a60a920d 1c68fe4918aad36fc1331fd4898a5cc57ae42dc9 mswiatek <mswiatek@core-logic.com> 1765159904 +0100	merge origin/main: Merge made by the 'ort' strategy.
+1c68fe4918aad36fc1331fd4898a5cc57ae42dc9 b9e0a7b6dd081c2f8c618d71a3c4cc54079ad3bc mswiatek <mswiatek@core-logic.com> 1765159947 +0100	merge origin/main: Fast-forward
+b9e0a7b6dd081c2f8c618d71a3c4cc54079ad3bc e369ea1bfdd6db3009267ce7a8ed04d659da2be4 mswiatek <mswiatek@core-logic.com> 1765160000 +0100	commit: 0 4 2235 test valid A-reheat, perturbation, tabu
+e369ea1bfdd6db3009267ce7a8ed04d659da2be4 5314fffcaf3dfb8b1a44641767a3f1026a642559 mswiatek <mswiatek@core-logic.com> 1765160175 +0100	merge origin/main: Fast-forward
+5314fffcaf3dfb8b1a44641767a3f1026a642559 e24f2697eb7edf0847971b1a209162f37f188a7d mswiatek <mswiatek@core-logic.com> 1765161543 +0100	commit: 0 4 2295 test rout reheat strategy
+e24f2697eb7edf0847971b1a209162f37f188a7d 47a139eb42ec8861dad717ffd79703618a8b670f mswiatek <mswiatek@core-logic.com> 1765161567 +0100	commit (merge): Merge remote-tracking branch 'origin/main'
+47a139eb42ec8861dad717ffd79703618a8b670f 61f490157d654b007223cab6fbadcade89c7fdd5 mswiatek <mswiatek@core-logic.com> 1765161635 +0100	merge origin/main: Fast-forward
+61f490157d654b007223cab6fbadcade89c7fdd5 532c9dccf8669ab119bb3cd7ca3aaebdfc548406 mswiatek <mswiatek@core-logic.com> 1765161682 +0100	commit: 0 4 2295 valid test rout reheat strategy
+532c9dccf8669ab119bb3cd7ca3aaebdfc548406 2c0f2b7cccd3c4fe9f867666836174b11ded1320 mswiatek <mswiatek@core-logic.com> 1765163118 +0100	commit: insert tabu size, pertub size and add random restart
+2c0f2b7cccd3c4fe9f867666836174b11ded1320 d3b0e735076ba9c533a4a4271b43cfe75f22b6ce mswiatek <mswiatek@core-logic.com> 1765163151 +0100	merge origin/main: Merge made by the 'ort' strategy.
+d3b0e735076ba9c533a4a4271b43cfe75f22b6ce 3570642b60d536eecacb2a5ce61b25b3da31c7e5 mswiatek <mswiatek@core-logic.com> 1765164563 +0100	merge origin/main: Fast-forward
+3570642b60d536eecacb2a5ce61b25b3da31c7e5 c10f1bd1fd2499bf26f96d0848c863cfad975bd2 mswiatek <mswiatek@core-logic.com> 1765164595 +0100	commit: fix random restart
+c10f1bd1fd2499bf26f96d0848c863cfad975bd2 7c37e3f8b1b4df8c4289e37622f65510d0b805e8 mswiatek <mswiatek@core-logic.com> 1765164714 +0100	merge origin/main: Fast-forward
+7c37e3f8b1b4df8c4289e37622f65510d0b805e8 82563c5c0db6077238969fdd79291df43b7bdf3d mswiatek <mswiatek@core-logic.com> 1765166023 +0100	commit: fix random restart
+82563c5c0db6077238969fdd79291df43b7bdf3d a7f1348a0651a3e125cd712a7eb1bbffaa6348cf mswiatek <mswiatek@core-logic.com> 1765166783 +0100	merge origin/main: Fast-forward
