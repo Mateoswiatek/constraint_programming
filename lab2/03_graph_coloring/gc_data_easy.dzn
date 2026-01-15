@@ -1,0 +1,23 @@
+%%%% data/gc_20_1
+nodesNumber = 20;
+edges = [|false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false
+|false, false, true, false, false, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false
+|false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, true, true, false, false
+|false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true, true, false, false
+|false, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, true, false, false
+|false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false
+|false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, true, false
+|false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+|false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false
+|false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false
+|false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false
+|false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false
+|false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false
+|true, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true
+|false, false, true, true, true, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false
+|false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false
+|];

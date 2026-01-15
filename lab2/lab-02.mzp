@@ -1,0 +1,24 @@
+{
+    "openFiles": [
+    ],
+    "openTab": -1,
+    "projectFiles": [
+        "01_n_queens/n_queens.mzc",
+        "01_n_queens/n_queens.mzn",
+        "02_n_queens_global_constraint/n_queens.mzc",
+        "02_n_queens_global_constraint/n_queens.mzn",
+        "03_graph_coloring/gc_data_trivial.dzn",
+        "03_graph_coloring/gc_data_easy.dzn",
+        "03_graph_coloring/gc_data.dzn",
+        "03_graph_coloring/graph_coloring.mzc",
+        "03_graph_coloring/graph_coloring.mzn",
+        "04_sudoku/sudoku_data.dzn",
+        "04_sudoku/sudoku.mzc",
+        "04_sudoku/sudoku.mzn",
+        "05_magic_sequence/magic_sequence.mzc",
+        "05_magic_sequence/magic_sequence.mzn"
+    ],
+    "selectedBuiltinConfigId": "org.gecode.gecode",
+    "selectedBuiltinConfigVersion": "6.3.0",
+    "version": 106
+}
