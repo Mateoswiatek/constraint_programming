@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 96847489ff1893d560e67ff7a72a675aedd04189 mswiatek <mswiatek@core-logic.com> 1765125548 +0100	clone: from https://gitlab.com/constraint-programming1321641/project-a-group-enroll.git
+96847489ff1893d560e67ff7a72a675aedd04189 e11965bb6ef24c32a26d5e74ed4bc978de1487f7 mswiatek <mswiatek@core-logic.com> 1765137013 +0100	commit: competition
+e11965bb6ef24c32a26d5e74ed4bc978de1487f7 72aaf987039ee397f73314d8f7d5da640088bb89 mswiatek <mswiatek@core-logic.com> 1765140746 +0100	commit: optimized 50041
+72aaf987039ee397f73314d8f7d5da640088bb89 c83c1609c8734de84e425022580cdb9a3b204bf5 mswiatek <mswiatek@core-logic.com> 1765141314 +0100	commit: optimized 71935
+c83c1609c8734de84e425022580cdb9a3b204bf5 c83c1609c8734de84e425022580cdb9a3b204bf5 mswiatek <mswiatek@core-logic.com> 1765141515 +0100	checkout: moving from main to xd
+c83c1609c8734de84e425022580cdb9a3b204bf5 3f4aab4c215d725d71b2108c005b4fca20e67cce mswiatek <mswiatek@core-logic.com> 1765141527 +0100	checkout: moving from xd to main
+3f4aab4c215d725d71b2108c005b4fca20e67cce 275928d612011c7a8dc994f909abaac6eb63dbbf mswiatek <mswiatek@core-logic.com> 1765141546 +0100	commit: optimized 71935
+275928d612011c7a8dc994f909abaac6eb63dbbf 275928d612011c7a8dc994f909abaac6eb63dbbf mswiatek <mswiatek@core-logic.com> 1765141708 +0100	checkout: moving from main to xd
+275928d612011c7a8dc994f909abaac6eb63dbbf 8f9a03c5b976b4ae2f149f92aca0b18453547f88 mswiatek <mswiatek@core-logic.com> 1765141712 +0100	checkout: moving from xd to main
+8f9a03c5b976b4ae2f149f92aca0b18453547f88 8f9a03c5b976b4ae2f149f92aca0b18453547f88 mswiatek <mswiatek@core-logic.com> 1765150535 +0100	checkout: moving from main to x
+8f9a03c5b976b4ae2f149f92aca0b18453547f88 9d6a4829f39a7cce3c091bd05f81ad9dfb8fef95 mswiatek <mswiatek@core-logic.com> 1765150539 +0100	checkout: moving from x to main
+9d6a4829f39a7cce3c091bd05f81ad9dfb8fef95 d05d3368162d20beaa423be9b060a796e81116c2 mswiatek <mswiatek@core-logic.com> 1765150565 +0100	commit: optimized 50041
+d05d3368162d20beaa423be9b060a796e81116c2 ff9858c826fa75df973af4fc0f1ef8ef135cacd2 mswiatek <mswiatek@core-logic.com> 1765150747 +0100	rebase (start): checkout origin/main
+ff9858c826fa75df973af4fc0f1ef8ef135cacd2 ff9858c826fa75df973af4fc0f1ef8ef135cacd2 mswiatek <mswiatek@core-logic.com> 1765150747 +0100	rebase (finish): returning to refs/heads/main
+ff9858c826fa75df973af4fc0f1ef8ef135cacd2 726ec9120fdf189d7ac69b94453f5c50563e640d mswiatek <mswiatek@core-logic.com> 1765150844 +0100	rebase (start): checkout origin/main
+726ec9120fdf189d7ac69b94453f5c50563e640d 726ec9120fdf189d7ac69b94453f5c50563e640d mswiatek <mswiatek@core-logic.com> 1765150844 +0100	rebase (finish): returning to refs/heads/main
+726ec9120fdf189d7ac69b94453f5c50563e640d d810e9db185df346b10b9d65cf417b783df9c9b6 mswiatek <mswiatek@core-logic.com> 1765152567 +0100	commit: optimized 42992
+d810e9db185df346b10b9d65cf417b783df9c9b6 ed12c37005dbcb1ded50df21ca6f12a2ea6eb4bf mswiatek <mswiatek@core-logic.com> 1765152702 +0100	rebase (start): checkout origin/main
+ed12c37005dbcb1ded50df21ca6f12a2ea6eb4bf ed12c37005dbcb1ded50df21ca6f12a2ea6eb4bf mswiatek <mswiatek@core-logic.com> 1765152702 +0100	rebase (finish): returning to refs/heads/main
+ed12c37005dbcb1ded50df21ca6f12a2ea6eb4bf 6ed98c83596c4c112ee791f94ccd46beb53f941b mswiatek <mswiatek@core-logic.com> 1765153530 +0100	commit: files optimized 42992 valid
+6ed98c83596c4c112ee791f94ccd46beb53f941b bdd2bfb367149dd48cd79167b8095900eddf4eff mswiatek <mswiatek@core-logic.com> 1765154518 +0100	commit: objective = 40520
+bdd2bfb367149dd48cd79167b8095900eddf4eff 92d50d4a1ea4c5375209b75cbc933ca1ba55e61b mswiatek <mswiatek@core-logic.com> 1765154549 +0100	commit (merge): Merge remote-tracking branch 'origin/main'
+92d50d4a1ea4c5375209b75cbc933ca1ba55e61b 57f3687d9acab241eded5b59a5bfaef8f12671c1 mswiatek <mswiatek@core-logic.com> 1765154796 +0100	merge origin/main: Fast-forward
+57f3687d9acab241eded5b59a5bfaef8f12671c1 de2f9b6ccaf5f0f8f5b3851c3909c2e32b0b6462 mswiatek <mswiatek@core-logic.com> 1765158446 +0100	commit: mateusz adaptive heating description.
+de2f9b6ccaf5f0f8f5b3851c3909c2e32b0b6462 c6b9bdda7146a1d9b30e991246b46d24ee6c841e mswiatek <mswiatek@core-logic.com> 1765158459 +0100	merge origin/main: Merge made by the 'ort' strategy.
