@@ -1,0 +1,9 @@
+output ["assignment = [",join(",",[show(assignment[s]) | s in Student]),"];\n","total_break_disappointment = ",show(total_break_disappointment),";\n","total_preference_disappointment = ",show(total_preference_disappointment),";\n","objective = ",show(objective),";\n"];
+set of int: Student = 1..5;
+array [Student] of int: total_disappointment;
+int: objective = sum([total_disappointment[s]*total_disappointment[s] | s in Student]);
+array [Student] of int: preference_disappointment;
+int: total_preference_disappointment = sum([preference_disappointment[s] | s in Student]);
+array [Student] of int: break_disappointment;
+int: total_break_disappointment = sum([break_disappointment[s] | s in Student]);
+array [Student] of set of int: assignment;

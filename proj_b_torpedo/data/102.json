@@ -1,0 +1,40 @@
+{
+    "timeToPourMetal": 5,
+    "timeToDesulfOneLevel": 5,
+    "timeToConvert": 5,
+    "numOfSlotsAtFullBuffer": 4,
+    "numOfSlotsAtDesulf": 2,
+    "numOfSlotsAtConverter": 2,
+    "timeToTransferFromEmptyBufferToFurnace": 1,
+    "timeToTransferFromFurnaceToFullBuffer": 2,
+    "timeToTransferFromFullBufferToDesulf": 1,
+    "timeToTransferFromDesulfToConverter": 2,
+    "timeToTransferFromConverterToEmptyBuffer": 4,
+    "timeToEmergencyTransferFromFurnaceToEmptyBuffer": 20,
+    "metalStartsPouringAt": [
+        5,
+        15,
+        25,
+        47,
+        70
+    ],
+    "metalSulfurLevels": [
+        3,
+        5,
+        3,
+        2,
+        3
+    ],
+    "converterOpensAt": [
+        30,
+        57,
+        62,
+        80
+    ],
+    "converterMaxSulfurLevels": [
+        2,
+        1,
+        1,
+        3
+    ]
+}

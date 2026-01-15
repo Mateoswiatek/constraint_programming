@@ -1,0 +1,18 @@
+{
+    "openFiles": [
+    ],
+    "openTab": -1,
+    "projectFiles": [
+        "01_search/n_queens.mzc",
+        "01_search/n_queens.mzn",
+        "02_packing/packing.mzc",
+        "02_packing/packing.mzn",
+        "03_krakpass/krakpass.dzn",
+        "03_krakpass/krakpass.mzc",
+        "03_krakpass/krakpass.mzn",
+        "03_krakpass/krakpass_large.dzn"
+    ],
+    "selectedBuiltinConfigId": "org.gecode.gecode",
+    "selectedBuiltinConfigVersion": "6.3.0",
+    "version": 106
+}

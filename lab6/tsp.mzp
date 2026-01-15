@@ -1,0 +1,30 @@
+{
+    "openFiles": [
+        "tsp_flow.mzn"
+    ],
+    "openTab": 0,
+    "projectFiles": [
+        "data/eil10.json",
+        "data/eil10_improve.json",
+        "data/eil11.json",
+        "data/eil12.json",
+        "data/eil13.json",
+        "data/eil14.json",
+        "data/eil16.json",
+        "data/eil20.json",
+        "data/eil30.json",
+        "data/eil40.json",
+        "data/eil51.json",
+        "tsp_flow.mzc",
+        "tsp_flow.mzn",
+        "tsp_improve.mzc",
+        "tsp_improve.mzn",
+        "tsp_init.mzc",
+        "tsp_init.mzn",
+        "tsp_naive.mzc",
+        "tsp_naive.mzn"
+    ],
+    "selectedBuiltinConfigId": "org.gecode.gecode",
+    "selectedBuiltinConfigVersion": "6.3.0",
+    "version": 106
+}

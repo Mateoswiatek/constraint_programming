@@ -1,0 +1,24 @@
+{
+    "openFiles": [
+        "torpedoes.mzn"
+    ],
+    "openTab": 0,
+    "projectFiles": [
+        "data/101.json",
+        "data/102.json",
+        "data/competition.json",
+        "data/inst_config1_100_50.json",
+        "data/inst_config1_300_200.json",
+        "data/inst_config1_30_20.json",
+        "data/inst_config2_100_50.json",
+        "data/inst_config2_300_200.json",
+        "data/inst_config2_30_20.json",
+        "data/inst_config3_100_50.json",
+        "data/inst_config3_300_200.json",
+        "data/inst_config3_30_20.json",
+        "torpedoes.mzn"
+    ],
+    "selectedBuiltinConfigId": "org.gecode.gecode",
+    "selectedBuiltinConfigVersion": "6.3.0",
+    "version": 106
+}

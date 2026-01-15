@@ -1,0 +1,21 @@
+n_students = 5;
+n_days = 2;
+n_classes = 2;
+n_groups = 6;
+n_time_units_in_hour = 12;
+
+student_break_importance = [1, 0, 0, 3, 4];
+student_prefers = array2d(Student, Group, [
+  -1, 4, 8, 6, 2, 4,
+  2, 2, 2, 2, 0, 6,
+  7, 3, 6, 1, 7, 3,
+  7, 6, 4, 3, -1, 1,
+  1, -1, -1, -1, -1, -1
+]);
+
+class_duration = [18, 24];
+class_size = [2, 2];
+group_class = [1, 1, 1, 2, 2, 2];
+group_start = [96, 96, 108, 96, 108, 110];
+group_day = [1, 2, 2, 1, 1, 2];
+groups_conflicts = array2d(Group, Group, [false, false, false, false, true, false, false, false, true, false, false, true, false, true, false, false, false, true, false, false, false, false, true, false, true, false, false, true, false, false, false, true, true, false, false, false]);

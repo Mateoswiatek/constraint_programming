@@ -1,0 +1,272 @@
+Optimal Torpedo Scheduling
+Adrian Goldwaser1,3(B) and Andreas Schutt2,3(B)
+1 The University of New South Wales, Sydney, Australia
+adrian.goldwaser@gmail.com
+2 The University of Melbourne, Melbourne, Australia
+3 Decision Sciences, Data61, CSIRO, Melbourne, Australia
+andreas.schutt@data61.csiro.au
+Abstract. We consider the torpedo scheduling problem in steel pro-
+duction, which is concerned with the transport of hot metal from a blast
+furnace to an oxygen converter. A schedule must satisfy, amongst other
+considerations, resource capacity constraints along the path, the loca-
+tions traversed and the sulfur level of the hot metal. The goal is first to
+minimize the number of torpedo cars used during the planning horizon
+and second to minimize the time spent desulfurizing the hot metal. We
+propose an exact solution method based on Logic-based Benders Decom-
+position using Mixed-Integer and Constraint Programming, which opti-
+mally solves and proves, for the first time, the optimality of all instances
+from the ACP Challenge 2016 within 20 min. In addition, we adapted
+our method to handle large-scale instances. This adaptation optimally
+solved all challenge instances within one minute and was able to solve
+instances of up to 100,000 hot metal pickups.
+1 Introduction
+Steel production is a complex process of sequential stages from raw materials to
+a final product in the form of, e.g., wire plate coils. In the first stage, the iron
+making, raw materials are melted in a blast furnace. In the second stage, the
+steel making, the hot metal is loaded in torpedo cars, or torpedoes, transported
+to different locations for improving its quality, and finally brought to an oxygen
+converter, in which it is poured. Once at the oxygen converter, the hot metal is
+further refined before the last two stages of continuous casting and hot trip mill.
+This work focuses on the rotation of the torpedoes between the blast furnace
+and oxygen converter in the steel making stage. At the steel making area, there
+are a number of blast furnaces producing hot metal of different qualities. At
+certain times or events, the hot metal in the blast furnace has to be loaded into
+a torpedo. Then the torpedo moves on a rail network to different locations for
+improving the quality of the hot metal if needed. After that, the hot metal is
+transported to the oxygen converter and poured into it at a pre-defined event
+time. Now, the empty torpedo is available for the next pick up of hot metal.
+We study the torpedo scheduling problem that was proposed by Schaus et
+al. [12] for the ACP Challenge 2016. This problem focuses on the assignment
+c© Springer International Publishing AG 2017
+J.C. Beck (Ed.): CP 2017, LNCS 10416, pp. 338–353, 2017.
+DOI: 10.1007/978-3-319-66158-2 22
+Optimal Torpedo Scheduling 339
+dsoc fb
+bfeb
+∞ 1
+4 34 1, 1
+20, ∞
+1, 12, 1
+4, 1
+1, 1
+Fig. 1. The graph for Example 1.
+bf 1
+5,3
+2
+15,3
+3
+25,3
+4
+47,2
+5
+70,3
+oc 6
+30,2
+7
+57,1
+8
+62,1
+9
+80,3
+time
+ep
+Fig. 2. A small example of a torpedo scheduling problem.
+of blast furnace events to oxygen converter events and the scheduling prob-
+lem of transporting the hot metal through different locations while satisfying
+all scheduling constraints and the quality constraint, sulfurization level, on the
+hot metal. Figure 1 shows the rail network considered. There are five different
+locations: blast furnace (bf), full buffer (fb), desulfurization station (ds), oxygen
+converter (oc), and empty buffer (eb). The full and empty buffers are waiting
+areas for full and empty torpedoes, whereas at the desulfurization station the
+sulfur level of the hot metal can be reduced by chemical processes. Each location
+has a torpedo capacity, which is shown above the node. Each link or edge has a
+minimal transition time and a torpedo capacity, which is shown next to the edge
+in the same order. The dashed edge from bf to eb represents the emergency pit,
+in which hot metal can be dumped if required. The objective is a lexicographical
+one, first to minimize the number of torpedoes and second to minimize the total
+time spent at the desulfurization station by torpedoes.
+Example 1. Figure 2 shows a small problem with five blast furnace 1, 2, . . . , 5
+and four converter events 6, 7, 8, 9. Each event is specified by its due date and
+(maximal) sulfur level given above or below its node. We assume that the loading
+time at the blast furnace, the unloading time at the oxygen converter, and the
+time to desulfurize the hot metal by one level are 5 time units. The transition
+times between different locations and the torpedo capacities are shown in Fig. 1,
+e.g., the blast furnace bf has torpedo capacity 1 and the emergency trip (dashed
+line) a transition time of 20 and no capacity limit. A solution is depicted by the
+arrows between the events, which shows the usage of three torpedoes. The first
+torpedo serves the events 1, 6, 4, 8, the second one only 2, and the third one 3,
+7, 5, 9 in this order. For fulfilling the demands for oxygen converter events 6, 7,
+and 8, a total of 20 time units have to be spent for desulfurization. 
+340 A. Goldwaser and A. Schutt
+To best of our knowledge, the torpedo scheduling problem we study was pro-
+posed at the ACP Challenge 2016. From ten teams, who took part, we are only
+aware of the publication of the winning team [8] and the third placed team [4].
+Kletzander and Musliu [8] propose a two-stage simulated annealing approach.
+The first stage minimizes the number of torpedoes by tracking the maximal
+number of torpedoes simultaneously used at any one time, whereas the second
+stage minimizes the desulfurization time. They relax some constraints, but add
+penalty terms to their objective. One iteration of the method takes between
+four to ten minutes time for the ACP challenge instances. They run 50 itera-
+tions to get their best results, which is a runtime of more than 3 h. Geiger [4]
+proposes a Branch-and-Bound method, which branches over the assignments of
+converter events to blast furnace events in a depth first manner with chrono-
+logical backtracking. In each node, a resource-constrained scheduling problem is
+solved by a serial generation scheme with variable neighborhood search [3]. In
+order to reduce the search tree size, Geiger removes infeasible assignments in a
+preprocessing step and after a solution is found. Both methods [4,8] are incom-
+plete and thus cannot prove optimality of an instance, unless the lower bound
+of the objective is the optimal value.
+Different aspects on the torpedo scheduling problem have been studied in the
+literature: the routing of torpedoes through the rail network while minimizing
+the transportation time of the hot metal [2,7,10], the molten iron allocation
+problem [13], the molten scheduling problem [6,9], and the locomotive scheduling
+problem [14]. All those works use different solution methods such as local search,
+mixed integer programming, and column generation, but none use Logic-based
+Benders Decomposition [5] and Constraint Programming (CP) as we do in the
+present paper.
+We propose a Logic-Based Benders Decomposition [5] method, in which the
+assignment problem and the lexicographical objective is handled in the master
+problem. The remaining scheduling is partitioned, if possible, and solved mini-
+mizing the desulfurization time. The master problem is solved by a Mixed Inte-
+ger Programming (MIP) solver whereas the scheduling problems by CP solver
+with Nogood Learning applying Lazy Clause Generation (LCG) [11]. In pre-
+processing, we simplify the problem by removing symmetries. To the best of our
+knowledge, our method is the first published complete method for the torpedo
+scheduling and proves the optimality of found solutions of the simulated anneal-
+ing approach [8] for all ACP challenge instances, in an even shorter runtime.
+We modified our method for handling large scale problems, but with the price
+of losing optimality. The modified method improved the runtime by orders of
+magnitude and was able to solve instances with 100,000 events in 70 min.
+2 Torpedo Scheduling
+The torpedo scheduling problem consists of a set of blast furnace events N =
+{1, 2, . . . , n}, a set of (oxygen) converter events M = {n + 1, n + 2, . . . , n + m},
+and a set of locations L = {bf, fb, ds, oc, eb} in the production plant. In addition,
+Optimal Torpedo Scheduling 341
+the torpedo graph G = (L, P ) is a directed graph which specifies the two possible
+traversals of the torpedoes through the plant. The oxygen converter trip delivers
+the hot metal to the converter and visits the locations in this order eb, bf, fb,
+ds, oc, and eb, whereas the emergency pit trip dumps the hot metal at the
+emergency pit and visits the locations in this order eb, bf, and eb. Thus, P =
+{(eb, bf), (bf, eb), (bf, fb), (fb, ds), (ds, oc), (oc, eb)}.
+Each location l ∈ L has a torpedo capacity capl where capbf = 1 and capep =
+∞. We extend this notation for edges p ∈ P , which is capp. All edges p ∈
+P \ {(bf, eb)} have a unit capacity capp = 1, whereas cap(bf,eb) = ∞. A torpedo
+traversing the edge p requires a minimal transition time of ttp.
+Each blast furnace event i ∈ N is characterized by a due date, ddbf
+i ∈ N0,
+at which hot metal is picked up by exactly one empty torpedo, and a sulfur
+level, sulbf
+i ∈ {1, 2, . . . , 5}, of the hot metal. Each oxygen converter event j ∈ M
+has a due date, ddoc
+j ∈ N0, at which hot metal from exactly one full torpedo is
+poured into the converter, and a maximal sulfur level, suloc
+j ∈ {1, 2, . . . , 5}, of
+the hot metal. Loading of a torpedo takes durbf ∈ N time periods at the blast
+furnace, while unloading takes duroc ∈ N time periods at the oxygen converter.
+Reducing the sulfur level of hot metal by one unit requires durds ∈ N time
+periods at the desulfurization station.
+Following [8], a torpedo run i is either a converter or emergency pit trip.
+In the former case, it is specified by variable departure times depl
+i, variable
+arrival times arrl
+i for locations in {eb, bf, fb, ds, oc}, and the variable converter
+event oci ∈ M , that it serves. For the latter case, it is specified by the variable
+departure and variable arrival times for only the locations eb and bf. We denote
+by epi whether it is a converter trip epi = 0 or an emergency pit trip epi = 1.
+Definition 1 (Torpedo Scheduling Problem). A torpedo scheduling prob-
+lem consists of a triplet (N, M, G = (L, P )). A solution S = (1, 2, . . . , n) is a
+vector of n torpedo runs, in which the i-th run picks up the hot metal of the
+i-th blast furnace event, matches the blast furnace event to an oxygen converter
+event or an emergency pit trip, and assigns all corresponding arrival and depar-
+ture times. A solution satisfies the capacity constraints on each location (1) and
+on each edge (2),
+∑
+i∈S:arrl
+i≤t<depl
+i
+1 ≤ capl ∀l ∈ L, ∀t ∈ N0 (1)
+∑
+i∈S:depl
+i≤t<arrk
+i
+1 ≤ cap(l,k) ∀(l, k) ∈ P, ∀t ∈ N0 (2)
+the minimal transition times for oxygen converter (3) and emergency pit
+trips (4),
+arrk
+i − depl
+i ≥ tt(l,k) ∀i ∈ S : epi = 0, ∀(l, k) ∈ P \ {(bf, eb)} (3)
+arrk
+i − depl
+i ≥ tt(l,k) ∀i ∈ S : epi = 1, ∀(l, k) ∈ {(eb, bf), (bf, eb)} (4)
+the loading constraints at the blast furnace (5), the unloading constraints (6),
+and the maximal sulfurization level (7) at the oxygen converter.
+Optimal Torpedo Scheduling 351
+Table 1. Detailed results on comp.
+Inst #T Desulf RT MT #I CHR #SP SSR S1 SAve SMax
+instance01 4 7695 41 s 88% 1 0% 10 100% 70% 264 316
+instance02 4 5302 119 s 88% 1 0% 43 100% 67% 98 774
+instance03 3 27150 415 s 97% 1 0% 583 100% 84% 17 123
+instance04 3 10676 35 s 92% 1 0% 839 100% 84% 2 4
+instance05 4 16308 575 s 97% 3 50% 1074 99% 83% 14 410
+instance06 4 7755 1134 s 97% 2 48% 34 98% 62% 237 755
+Table 2. Results on each test set excluding infeasible instances.
+Inst #T Desulf RT MT #I CHR #SP SSR
+small 3.5 362 2 s 51% 1.1 3% 26 99.2%
+comp 3.7 12481 386 s 93% 1.5 16% 431 99.7%
+medium 4.4 1224 484 s 95% 1.2 4% 170 99.6%
+large 4.5 6481 124093 s 99% 2.0 31% 848 99.9%
+hit rate for sub-problems (CHR), the number of total sub-problems stores (#SP),
+the success rate of sub-problems (SSR), i.e., no cuts needed to be generated, and
+the percentage of sub-problems with size 1 (S1), the average size of sub-problems
+with size greater than 1 (SAvg), and the maximal size of sub-problems (SMax).
+All ACP challenge instances were optimally solved in less than 20 min, which is
+much quicker than the winning method presented in [8]. The results also reveal
+that the MIP solver used the majority of the runtime and the sub-problems had
+almost 100% success, which lead to a very low number of iterations. In addition,
+most sub-problems were small and only a few contained 100 s of blast furnace
+events. Note that the nogood learning solver Chuffed was essential for quickly
+solving the sub-problems. In particular on larger and infeasible ones, we had to
+terminate the process if using Gecode.
+Table 2 presents the results on all test sets excluding infeasible instances. The
+table shows a subset of columns, but each entry is an average over the number
+of feasible instances. The results show a similar picture to the ACP challenge
+instances. However, for the large size instances in large, the runtime was more
+than 30 h and we needed to run it on a machine with extra RAM in order to be
+able to solve the MIP. The machine used was an Intel(R) Xeon(R) CPU E5-2660
+at 2.60 GHz with 128 GB RAM which is not practical in most cases.
+Limited Forward Matchings. Figures 5, 6 and 7 show the development of the
+optimality gap on the desulfurization time spent, of the percentage of instances
+optimally solved, and of the runtime when the limit on the forward matchings
+increases. Note that Fig. 7 uses logarithmic scale for the y-axis. The optimality
+gap on the desulfurization time spent converges quickly on each test set. Between
+352 A. Goldwaser and A. Schutt
+Fig. 5. Optimality gap in desulfurization
+time.
+Fig. 6. Percent of instances solved
+optimally.
+Fig. 7. Total runtime.
+a limit of 30 and 40 the last optimal solution was found even on the test set large.
+The runtime could be reduced by orders of magnitude for medium and large scale
+problems, especially for large scale instances where the runtime was reduced to
+less than 10 min. All ACP challenge instances were solved in less than one minute,
+down from 20 min. In order to test the limit of our method, we created three
+instances with 50,000 and 100,000 blast furnace events, respectively. The average
+total runtime of the 50 k instances were below 20 min except for a limit of 7 as
+shown in Fig. 7. Interestingly, the same optimal solutions were generated with
+limits of at least 10. The 100 k instances were solved between 70 min and 3.5 h
+for a limit of 20.
+6 Conclusion
+We propose a logic-based Benders decomposition solution method for the indus-
+trial problem of torpedo scheduling in the steel production. The master problem
+was modeled as a MIP, which takes care of the assignment component of the
+problem and the lexicographical objective. The remaining scheduling problem
+was split into smaller sub-problems and solved by a CP solver with nogood
+learning. This solution method is the first exact one for the torpedo scheduling
+problem and is the first one, that could prove the optimality of all instances from
+the ACP 2016 Challenge in less than 20 min. Thus, it outperforms the previous
+state of the art. A limited version of our method, which cannot guarantee opti-
+mality, could reduce the runtime by an order of magnitude and was able to find
+optimal solutions very quickly for even larger instances that we created.
+Optimal Torpedo Scheduling 353
+Acknowledgments. This work was partially supported by the Asian Office of
+Aerospace Research and Development grant 15-4016.

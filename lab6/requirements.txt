@@ -1,0 +1,17 @@
+absl-py==2.3.1
+immutabledict==4.2.2
+lark-parser==0.12.0
+minizinc==0.10.0
+mypy==1.18.2
+mypy-extensions==1.1.0
+numpy==2.3.5
+ortools==9.14.6206
+pandas==2.3.3
+pathspec==0.12.1
+protobuf==6.31.1
+python-dateutil==2.9.0.post0
+pytz==2025.2
+ruff==0.14.6
+six==1.17.0
+typing-extensions==4.15.0
+tzdata==2025.2
