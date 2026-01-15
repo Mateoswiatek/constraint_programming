@@ -1,0 +1,346 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="gl-system ui-indigo with-top-bar with-header application-chrome page-with-panels with-gl-container-queries " lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>agh-courses / 2025-2026 / Constraint Programming / wiki / Wiki 04. Search Modeling · GitLab</title>
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https://gitlab.com/assets/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=100;gon.asset_host=null;gon.webpack_public_path="/assets/webpack/";gon.relative_url_root="";gon.user_color_mode="gl-system";gon.user_color_scheme="white";gon.markdown_surround_selection=true;gon.markdown_automatic_lists=true;gon.markdown_maintain_indentation=false;gon.math_rendering_limits_enabled=true;gon.allow_immediate_namespaces_deletion=true;gon.iframe_rendering_enabled=false;gon.iframe_rendering_allowlist=[];gon.sentry_dsn="https://f5573e26de8f4293b285e556c35dfd6e@new-sentry.gitlab.net/4";gon.sentry_environment="gprd";gon.sentry_clientside_traces_sample_rate=0.05;gon.recaptcha_api_server_url="https://www.recaptcha.net/recaptcha/api.js";gon.recaptcha_sitekey="6LfAERQTAAAAAL4GYSiAMGLbcLyUIBSfPrDNJgeC";gon.gitlab_url="https://gitlab.com";gon.promo_url="https://about.gitlab.com";gon.forum_url="https://forum.gitlab.com";gon.docs_url="https://docs.gitlab.com";gon.revision="3da2e793296";gon.feature_category="groups_and_projects";gon.gitlab_logo="/assets/gitlab_logo-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png";gon.secure=true;gon.sprite_icons="/assets/icons-4c8dcc4ae95b72054c5ab1467cf841cbe8c4717ac179b67e7e1f80a72d92038a.svg";gon.sprite_file_icons="/assets/file_icons/file_icons-90de312d3dbe794a19dee8aee171f184ff69ca9c9cf9fe37e8b254e84c3a1543.svg";gon.illustrations_path="/images/illustrations.svg";gon.emoji_sprites_css_path="/assets/emoji_sprites-bd26211944b9d072037ec97cb138f1a52cd03ef185cd38b8d1fcc963245199a1.css";gon.emoji_backend_version=4;gon.gridstack_css_path="/assets/lazy_bundles/gridstack-f42069e5c7b1542688660592b48f2cbd86e26b77030efd195d124dbd8fe64434.css";gon.test_env=false;gon.disable_animations=null;gon.suggested_label_colors={"#cc338b":"Magenta-pink","#dc143c":"Crimson","#c21e56":"Rose red","#cd5b45":"Dark coral","#ed9121":"Carrot orange","#eee600":"Titanium yellow","#009966":"Green-cyan","#8fbc8f":"Dark sea green","#6699cc":"Blue-gray","#e6e6fa":"Lavender","#9400d3":"Dark violet","#330066":"Deep violet","#36454f":"Charcoal grey","#808080":"Gray"};gon.first_day_of_week=0;gon.time_display_relative=true;gon.time_display_format=0;gon.ee=true;gon.jh=false;gon.dot_com=true;gon.uf_error_prefix="UF";gon.pat_prefix="glpat-";gon.keyboard_shortcuts_enabled=true;gon.diagramsnet_url="https://embed.diagrams.net";gon.version="18.7.0-pre";gon.current_user_id=13853152;gon.current_username="Mateoswiatek";gon.current_user_fullname="Mateusz Świątek";gon.current_user_avatar_url="https://secure.gravatar.com/avatar/9caca4b73776d9cb0a2ae974a33c6a35b0ef282bc2387bbad26192f31d0fc2d8?s=80\u0026d=identicon";gon.text_editor="not_set";gon.features={"uiForOrganizations":false,"organizationSwitching":false,"findAndReplace":false,"removeMonitorMetrics":true,"newProjectCreationForm":false,"workItemsClientSideBoards":false,"glqlWorkItems":false,"glqlAggregation":false,"glqlTypescript":true,"paneledView":true,"archiveGroup":true,"accessibleLoadingButton":false,"allowIframesInMarkdown":false,"projectStudioEnabled":true,"advancedContextResolver":true,"duoUiNext":false,"inlineBlame":false,"issueEmailParticipants":true,"editBranchRules":true,"pageSpecificStyles":false,"directoryCodeDropdownUpdates":true,"repositoryFileTreeBrowser":false,"repositoryLockInformation":false,"useDuoContextExclusion":true,"duoWorkflowInCi":true,"aiExperimentSastFpDetection":false};gon.roadmap_epics_limit=1000;gon.ai={"chat":{"total_model_token":4096,"max_response_token":300,"input_content_limit":15184}};gon.subscriptions_url="https://customers.gitlab.com";gon.subscriptions_legacy_sign_in_url="https://customers.gitlab.com/customers/sign_in?legacy=true";gon.billing_accounts_url="https://customers.gitlab.com/billing_accounts";gon.payment_form_url="https://customers.gitlab.com/payment_forms/cc_validation";gon.payment_validation_form_id="payment_method_validation";gon.licensed_features={"remoteDevelopment":true};
+//]]>
+</script>
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+window.uploads_path = "/agh-courses/25/cp/wiki/04/uploads";
+
+
+
+//]]>
+</script>
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-7ca28e27e17da6aea3531cb027b5a4bc6fb6473f426384604c0bf9d7c473d2af.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_dark-9b84093284ebe801f10109cb0b70afa7b077591132a34aedcbeaf201c7e6a0aa.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/page_bundles/project-84c702fec0d46898f3752e2d11cffd1198f91161651f5a64ba96d3320173c207.css" /><link rel="stylesheet" href="/assets/page_bundles/tree-87852cf755928d514a7c18c7bc442022c92b8887a274746dadf9ab0f18417de8.css" /><link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css" /><link rel="stylesheet" href="/assets/page_bundles/work_items-9f34e9e1785e95144a97edb25299b8dd0d2e641f7efb2d8b7bea3717104ed8f2.css" /><link rel="stylesheet" href="/assets/page_bundles/notes_shared-8f7a9513332533cc4a53b3be3d16e69570e82bc87b3f8913578eaeb0dce57e21.css" />
+<link rel="stylesheet" href="/assets/tailwind_cqs-44a612af8fc718b6aafe54e88acfeaf7adf1fb00ba67321833a12b9ccb7bb9e5.css" />
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-9669e20d2bac0337d55977e9ba6cf7540fcbb9d11ec33b69e51bae1d72e40db3.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/highlight/themes/monokai-3616e2ebbccdc0560d02bdeb553578d719b3022b83478167be90ae26d6d93dd8.css" media="(prefers-color-scheme: dark)" />
+
+<script src="/assets/webpack/runtime.1956d2aa.bundle.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/main.8054de5e.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/tracker.85adcc5f.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/analytics.1f5b93d6.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplowprd.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true};
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-7","data":{"environment":"production","source":"gitlab-rails","correlation_id":"9a7dcea687c8ccd2-ATL","plan":"free","extra":{},"user_id":13853152,"global_user_id":"TK3nuqxC+486AEXBCgz08TPEp6DCidgEXKW8ASiaU/c=","user_type":"human","is_gitlab_team_member":false,"namespace_id":116942250,"ultimate_parent_namespace_id":2749443,"project_id":51917154,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","instance_id":"ea8bf810-1d6f-4a6a-b4fd-93e8cbd8b57f","unique_instance_id":"b5fa1911-0638-5651-8ec4-5b892ef92e35","host_name":"gitlab.com","instance_version":"18.7.0","context_generated_at":"2025-12-02T21:09:47.407Z"}};
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace116942250/project51917154";
+gl.maskedDefaultReferrerUrl = "https://gitlab.com/groups/namespace/-/shared";
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = ["ai_question_category","perform_completion_worker","process_gitlab_duo_question","agent_platform_session_created","agent_platform_session_dropped","agent_platform_session_finished","agent_platform_session_resumed","agent_platform_session_started","agent_platform_session_stopped","ai_response_time","ci_repository_xray_artifact_created","cleanup_stuck_agent_platform_session","click_purchase_seats_button_group_duo_pro_home_page","code_suggestion_accepted_in_ide","code_suggestion_rejected_in_ide","code_suggestion_shown_in_ide","code_suggestions_connection_details_rate_limit_exceeded","code_suggestions_direct_access_rate_limit_exceeded","code_suggestions_rate_limit_exceeded","create_ai_catalog_item","create_ai_catalog_item_consumer","create_ai_self_hosted_model","default_answer","delete_ai_catalog_item","delete_ai_catalog_item_consumer","delete_ai_self_hosted_model","detected_high_comment_temperature","detected_repeated_high_comment_temperature","encounter_duo_code_review_error_during_review","error_answer","excluded_files_from_duo_code_review","execute_llm_method","find_no_issues_duo_code_review_after_review","find_nothing_to_review_duo_code_review_on_mr","finish_duo_workflow_execution","finish_mcp_tool_call","forced_high_temperature_commenting","i_quickactions_q","include_repository_xray_data_into_code_generation_prompt","mention_gitlabduo_in_mr_comment","post_comment_duo_code_review_on_diff","process_gitlab_duo_slash_command","react_thumbs_down_on_duo_code_review_comment","react_thumbs_up_on_duo_code_review_comment","request_ask_help","request_duo_chat_response","request_review_duo_code_review_on_mr_by_author","request_review_duo_code_review_on_mr_by_non_author","requested_comment_temperature","retry_duo_workflow_execution","start_duo_workflow_execution","start_mcp_tool_call","submit_gitlab_duo_question","tokens_per_embedding","tokens_per_user_request_prompt","tokens_per_user_request_response","trigger_ai_catalog_item","troubleshoot_job","update_ai_catalog_item","update_ai_catalog_item_consumer","update_ai_self_hosted_model","update_model_selection_feature","update_self_hosted_ai_feature_to_vendored_model","view_ai_catalog_item","view_ai_catalog_item_index"];
+gl.onlySendDuoEvents = false;
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application-7ca28e27e17da6aea3531cb027b5a4bc6fb6473f426384604c0bf9d7c473d2af.css" as="style" type="text/css" nonce="d3EyS39fuME7eZ8CyZ8Liw==">
+<link rel="preload" href="/assets/highlight/themes/white-9669e20d2bac0337d55977e9ba6cf7540fcbb9d11ec33b69e51bae1d72e40db3.css" as="style" type="text/css" nonce="d3EyS39fuME7eZ8CyZ8Liw==">
+<link crossorigin="" href="https://snowplowprd.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-9892dc17af892e03de41625c0ee325117a3b8ee4ba6005f3a3eac68510030aed.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-f96f17332d67b21ada2dfba5f0c0e1d5801eab99330472057bf18edd93d4ccf7.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
+<link rel="preload" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" as="style" type="text/css" nonce="d3EyS39fuME7eZ8CyZ8Liw==">
+
+
+
+<script src="/assets/webpack/sentry.0193c2ee.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.9b1bdddd.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/super_sidebar.5ceaee1d.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-3888eb97.2fd41a56.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/dbe6a049.1fc40ea6.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.edit-pages.projects.sni-42df7d4c.cf2fed02.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/467359d4.634b8aee.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/ea7ea8c3.58ef5d7f.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show-pages.projects.tre-c684fcf6.e157f467.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/499d8988.4aa04d40.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.get_started.show-pages.projects.show-pages.projects.tree.show.92e86488.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.commits.show-pages.projects.show-pages.projects.tree.show.7f4c52b7.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.9b22b1ad.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.e47324af.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/commons-pages.groups.show-pages.projects.home_panel-pages.projects.show.f1e3dbe2.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+<script src="/assets/webpack/pages.projects.show.4f3b4737.chunk.js" defer="defer" nonce="EDGlw7NMiTG8o8pH8Ix8zw=="></script>
+
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="agh-courses / 2025-2026 / Constraint Programming / wiki / Wiki 04. Search Modeling · GitLab" property="og:title">
+<meta content="GitLab.com" property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/51917154/digit_4.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/agh-courses/25/cp/wiki/04" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="agh-courses / 2025-2026 / Constraint Programming / wiki / Wiki 04. Search Modeling · GitLab" property="twitter:title">
+<meta content="GitLab.com" property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/51917154/digit_4.jpg" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="mCLuhasS58Rti_R4t7mzAmCYgbBZDLK005ru7uMEioSc2Hlp45cBnCeeVCWs-dRGNisSmUdLE_6GMgMB2hKgJQ" />
+<meta name="csp-nonce" content="EDGlw7NMiTG8o8pH8Ix8zw==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+<link rel="alternate" type="application/atom+xml" title="Wiki 04. Search Modeling activity" href="/agh-courses/25/cp/wiki/04.atom?feed_token=glft-f4abf9b38d5d867ebcdaea4043f83e4a81ca36bd3cf686182a9c870115f21c28-13853152" />
+
+
+
+
+<meta content="GitLab.com" name="description">
+<meta content="#222261" name="theme-color">
+</head>
+
+<body class="tab-width-8 gl-browser-firefox gl-platform-linux " data-group="wiki" data-group-full-path="agh-courses/25/cp/wiki" data-namespace-id="116942250" data-page="projects:show" data-page-type-id="04" data-project="04" data-project-full-path="agh-courses/25/cp/wiki/04" data-project-id="51917154" data-project-studio-available="true" data-project-studio-enabled="true">
+<div id="js-tooltips-container"></div>
+
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isFirefox":true,"isLinux":true};
+
+
+//]]>
+</script>
+
+
+<header class="super-topbar js-super-topbar"></header>
+<div class="layout-page js-page-layout page-with-super-sidebar">
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+const outer = document.createElement('div');
+outer.style.visibility = 'hidden';
+outer.style.overflow = 'scroll';
+document.body.appendChild(outer);
+const inner = document.createElement('div');
+outer.appendChild(inner);
+const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+outer.parentNode.removeChild(outer);
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+
+//]]>
+</script><aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{}" data-force-desktop-expanded-sidebar="" data-is-saas="true" data-root-path="/" data-sidebar="{&quot;whats_new_most_recent_release_items_count&quot;:3,&quot;whats_new_version_digest&quot;:&quot;2438dfd35ebf005347cec38782a7966a461059d083e95f51359ef349b17bdde9&quot;,&quot;whats_new_read_articles&quot;:[],&quot;whats_new_mark_as_read_path&quot;:&quot;/-/whats_new/mark_as_read&quot;,&quot;is_logged_in&quot;:true,&quot;compare_plans_url&quot;:&quot;https://about.gitlab.com/pricing&quot;,&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Your work&quot;,&quot;link&quot;:&quot;/&quot;,&quot;icon&quot;:&quot;work&quot;},{&quot;title&quot;:&quot;Explore&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;},{&quot;title&quot;:&quot;Profile&quot;,&quot;link&quot;:&quot;/-/user_settings/profile&quot;,&quot;icon&quot;:&quot;profile&quot;},{&quot;title&quot;:&quot;Preferences&quot;,&quot;link&quot;:&quot;/-/profile/preferences&quot;,&quot;icon&quot;:&quot;preferences&quot;}],&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;Wiki 04. Search Modeling&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/51917154/digit_4.jpg&quot;,&quot;entity_id&quot;:51917154,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04&quot;,&quot;link_classes&quot;:&quot;shortcuts-project&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;manage_menu&quot;,&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/activity&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/activity&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/project_members&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/labels&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;plan_menu&quot;,&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Issues&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;pill_count_field&quot;:&quot;openIssuesCount&quot;,&quot;pill_count_dynamic&quot;:false,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/boards&quot;,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/milestones&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/wikis/home&quot;,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;deploy_menu&quot;,&quot;title&quot;:&quot;Deploy&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/ml/models&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;model_registry&quot;,&quot;title&quot;:&quot;Model registry&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/ml/models&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;monitor_menu&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues/service_desk&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues/service_desk&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false}],&quot;current_context_header&quot;:&quot;Project&quot;,&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;docs_path&quot;:&quot;/help/docs&quot;,&quot;display_whats_new&quot;:true,&quot;show_version_check&quot;:false,&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;settings_path&quot;:&quot;/search/settings&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:116942250,&quot;name&quot;:&quot;wiki&quot;,&quot;full_name&quot;:&quot;agh-courses / 2025-2026 / Constraint Programming / wiki&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/agh-courses/25/cp/wiki/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/agh-courses/25/cp/wiki/-/merge_requests?assignee_username=Mateoswiatek&quot;},&quot;project&quot;:{&quot;id&quot;:51917154,&quot;name&quot;:&quot;Wiki 04. Search Modeling&quot;},&quot;project_metadata&quot;:{&quot;issues_path&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues&quot;},&quot;code_search&quot;:true,&quot;scope&quot;:null,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Milestones&quot;,&quot;href&quot;:&quot;/dashboard/milestones&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-milestones&quot;},{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/dashboard/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Activity&quot;,&quot;href&quot;:&quot;/dashboard/activity&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-activity&quot;},{&quot;title&quot;:&quot;Groups&quot;,&quot;href&quot;:&quot;/dashboard/groups&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-groups&quot;},{&quot;title&quot;:&quot;Projects&quot;,&quot;href&quot;:&quot;/dashboard/projects&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-projects&quot;},{&quot;title&quot;:&quot;Create a new issue&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues/new&quot;,&quot;css_class&quot;:&quot;shortcuts-new-issue&quot;}],&quot;terms&quot;:&quot;/-/users/terms&quot;,&quot;is_admin&quot;:false,&quot;name&quot;:&quot;Mateusz Świątek&quot;,&quot;username&quot;:&quot;Mateoswiatek&quot;,&quot;admin_url&quot;:&quot;/admin&quot;,&quot;admin_mode&quot;:{&quot;admin_mode_feature_enabled&quot;:false,&quot;admin_mode_active&quot;:false,&quot;enter_admin_mode_url&quot;:&quot;/admin/session/new&quot;,&quot;leave_admin_mode_url&quot;:&quot;/admin/session/destroy&quot;,&quot;user_is_admin&quot;:false},&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/9caca4b73776d9cb0a2ae974a33c6a35b0ef282bc2387bbad26192f31d0fc2d8?s=80\u0026d=identicon&quot;,&quot;has_link_to_profile&quot;:true,&quot;link_to_profile&quot;:&quot;/Mateoswiatek&quot;,&quot;logo_url&quot;:null,&quot;status&quot;:{&quot;can_update&quot;:true,&quot;busy&quot;:null,&quot;customized&quot;:null,&quot;availability&quot;:&quot;&quot;,&quot;emoji&quot;:null,&quot;message_html&quot;:null,&quot;message&quot;:null,&quot;clear_after&quot;:null},&quot;settings&quot;:{&quot;has_settings&quot;:true,&quot;profile_path&quot;:&quot;/-/user_settings/profile&quot;,&quot;profile_preferences_path&quot;:&quot;/-/profile/preferences&quot;},&quot;user_counts&quot;:{&quot;assigned_issues&quot;:0,&quot;assigned_merge_requests&quot;:0,&quot;review_requested_merge_requests&quot;:0,&quot;todos&quot;:0,&quot;last_update&quot;:1764709787478},&quot;can_sign_out&quot;:true,&quot;sign_out_link&quot;:&quot;/users/sign_out&quot;,&quot;issues_dashboard_path&quot;:&quot;/dashboard/issues?assignee_username=Mateoswiatek&quot;,&quot;merge_request_dashboard_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;todos_dashboard_path&quot;:&quot;/dashboard/todos&quot;,&quot;create_new_menu_groups&quot;:[{&quot;name&quot;:&quot;In this project&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New issue&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues/new&quot;,&quot;component&quot;:&quot;create_new_work_item_modal&quot;,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_issue&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_issue&quot;}}]},{&quot;name&quot;:&quot;In GitLab&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New project/repository&quot;,&quot;href&quot;:&quot;/projects/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_project&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_project&quot;}},{&quot;text&quot;:&quot;New group&quot;,&quot;href&quot;:&quot;/groups/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_group&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_group&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_snippet&quot;}}]}],&quot;projects_path&quot;:&quot;/dashboard/projects&quot;,&quot;groups_path&quot;:&quot;/dashboard/groups&quot;,&quot;gitlab_com_but_not_canary&quot;:true,&quot;gitlab_com_and_canary&quot;:null,&quot;canary_toggle_com_url&quot;:&quot;https://next.gitlab.com&quot;,&quot;current_context&quot;:{&quot;namespace&quot;:&quot;projects&quot;,&quot;item&quot;:{&quot;id&quot;:51917154,&quot;name&quot;:&quot;Wiki 04. Search Modeling&quot;,&quot;namespace&quot;:&quot;agh-courses / 2025-2026 / Constraint Programming / wiki / Wiki 04. Search Modeling&quot;,&quot;fullPath&quot;:&quot;agh-courses/25/cp/wiki/04&quot;,&quot;webUrl&quot;:&quot;/agh-courses/25/cp/wiki/04&quot;,&quot;avatarUrl&quot;:&quot;/uploads/-/system/project/avatar/51917154/digit_4.jpg&quot;}},&quot;pinned_items&quot;:[&quot;project_issue_list&quot;,&quot;project_merge_request_list&quot;],&quot;update_pins_url&quot;:&quot;/-/users/pins&quot;,&quot;is_impersonating&quot;:false,&quot;stop_impersonation_path&quot;:&quot;/admin/impersonation&quot;,&quot;track_visits_path&quot;:&quot;/-/track_namespace_visits&quot;,&quot;work_items&quot;:{&quot;full_path&quot;:&quot;agh-courses/25/cp/wiki/04&quot;,&quot;has_issuable_health_status_feature&quot;:&quot;false&quot;,&quot;issues_list_path&quot;:&quot;/agh-courses/25/cp/wiki/04/-/issues&quot;,&quot;labels_manage_path&quot;:&quot;/agh-courses/25/cp/wiki/04/-/labels&quot;,&quot;can_admin_label&quot;:&quot;false&quot;,&quot;has_issue_weights_feature&quot;:&quot;false&quot;,&quot;has_iterations_feature&quot;:&quot;false&quot;,&quot;work_item_planning_view_enabled&quot;:&quot;false&quot;},&quot;has_multiple_organizations&quot;:false}"></aside>
+
+
+<div class="panels-container gl-flex gl-gap-3">
+<div class="content-panels gl-flex-1 gl-w-full gl-flex gl-gap-3 gl-relative js-content-panels gl-@container/content-panels">
+<div class="js-static-panel static-panel content-wrapper gl-relative paneled-view gl-flex-1 gl-overflow-y-auto gl-bg-default" id="static-panel-portal">
+<div class="panel-header">
+<div class="broadcast-wrapper">
+
+
+
+</div>
+<div class="top-bar-fixed container-fluid gl-rounded-t-lg gl-sticky gl-top-0 gl-left-0 gl-mx-0 gl-w-full" data-testid="top-bar">
+<div class="top-bar-container gl-flex gl-items-center gl-gap-2">
+<div class="gl-grow gl-basis-0 gl-flex gl-items-center gl-justify-start gl-gap-3">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"agh-courses","item":"https://gitlab.com/agh-courses"},{"@type":"ListItem","position":2,"name":"2025-2026","item":"https://gitlab.com/agh-courses/25"},{"@type":"ListItem","position":3,"name":"Constraint Programming","item":"https://gitlab.com/agh-courses/25/cp"},{"@type":"ListItem","position":4,"name":"wiki","item":"https://gitlab.com/agh-courses/25/cp/wiki"},{"@type":"ListItem","position":5,"name":"Wiki 04. Search Modeling","item":"https://gitlab.com/agh-courses/25/cp/wiki/04"}]}
+
+
+</script>
+<div data-testid="breadcrumb-links" id="js-vue-page-breadcrumbs-wrapper">
+<div data-breadcrumbs-json="[{&quot;text&quot;:&quot;agh-courses&quot;,&quot;href&quot;:&quot;/agh-courses&quot;,&quot;avatarPath&quot;:null},{&quot;text&quot;:&quot;2025-2026&quot;,&quot;href&quot;:&quot;/agh-courses/25&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116520342/pobierz.png&quot;},{&quot;text&quot;:&quot;Constraint Programming&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116942143/_logo.png&quot;},{&quot;text&quot;:&quot;wiki&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116942250/guide-book_11530059.png&quot;},{&quot;text&quot;:&quot;Wiki 04. Search Modeling&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki/04&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/project/avatar/51917154/digit_4.jpg&quot;}]" id="js-vue-page-breadcrumbs"></div>
+<div id="js-injected-page-breadcrumbs"></div>
+<div id="js-page-breadcrumbs-extra"></div>
+</div>
+
+
+<div id="js-work-item-feedback"></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="panel-content">
+<div class="panel-content-inner js-static-panel-inner">
+<div class="alert-wrapper alert-wrapper-top-space gl-flex gl-flex-col gl-gap-3 container-fluid container-limited">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="container-fluid container-limited project-highlight-puc">
+<main class="content gl-@container/panel gl-pb-3" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div id="js-drawer-container"></div>
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<div id="js-global-alerts"></div>
+</div>
+
+
+
+<div class="js-hand-raise-lead-modal" data-submit-path="/-/gitlab_subscriptions/hand_raise_leads" data-user="{&quot;namespace_id&quot;:2749443,&quot;user_name&quot;:&quot;Mateoswiatek&quot;,&quot;first_name&quot;:&quot;Mateusz&quot;,&quot;last_name&quot;:&quot;Świątek&quot;,&quot;company_name&quot;:&quot;&quot;}"></div>
+
+
+
+
+
+
+
+<header class="project-home-panel js-show-on-project-root gl-mt-5 empty-project">
+<div class="gl-flex gl-justify-between gl-flex-wrap gl-flex-col gl-gap-5 @sm/panel:gl-flex-row">
+<div class="home-panel-title-row gl-flex gl-items-center">
+<img srcset="/uploads/-/system/project/avatar/51917154/digit_4.jpg?width=48 1x, /uploads/-/system/project/avatar/51917154/digit_4.jpg?width=96 2x" class="gl-avatar gl-avatar-s48 gl-self-start gl-shrink-0 gl-mr-4 !gl-rounded-base" height="48" width="48" loading="lazy" itemprop="image" alt="Wiki 04. Search Modeling" src="/uploads/-/system/project/avatar/51917154/digit_4.jpg?width=48" />
+
+<h1 class="home-panel-title gl-heading-1 gl-flex gl-items-center gl-flex-wrap gl-gap-3 gl-break-anywhere gl-mb-0" data-testid="project-name-content" itemprop="name">
+Wiki 04. Search Modeling
+<button class="has-tooltip gl-border-0 gl-bg-transparent gl-p-0 gl-leading-0 gl-text-inherit visibility-icon gl-inline-flex" data-container="body" data-placement="top" title="Public - The project can be accessed without any authentication." type="button" aria-label="Public - The project can be accessed without any authentication."><svg class="s16 gl-fill-icon-subtle" data-testid="earth-icon"><use href="/assets/icons-4c8dcc4ae95b72054c5ab1467cf841cbe8c4717ac179b67e7e1f80a72d92038a.svg#earth"></use></svg></button>
+
+
+</h1>
+</div>
+<div data-can-edit="false" data-can-read-project="true" data-edit-path="/agh-courses/25/cp/wiki/04/edit" data-emails-disabled="false" data-id="51917154" data-is-group="false" data-is-project-archived="false" data-is-project-empty="true" data-is-project-marked-for-deletion="false" data-notification-dropdown-items="[&quot;global&quot;,&quot;watch&quot;,&quot;participating&quot;,&quot;mention&quot;,&quot;disabled&quot;]" data-notification-help-page-path="/help/user/profile/notifications.md" data-notification-level="global" data-project-avatar="/uploads/-/system/project/avatar/51917154/digit_4.jpg" data-project-id="51917154" data-project-name="Wiki 04. Search Modeling" data-project-visibility-level="public" data-request-access-path="/agh-courses/25/cp/wiki/04/-/project_members/request_access" data-sign-in-path="/users/sign_in?redirect_to_referer=yes" data-star-count="0" data-starred="false" data-starrers-path="/agh-courses/25/cp/wiki/04/-/starrers" id="js-home-panel"></div>
+</div>
+
+</header>
+
+<div class="project-page-indicator js-show-on-project-root"></div>
+<div class="project-page-layout">
+<div class="project-page-layout-sidebar js-show-on-project-root gl-mt-5">
+<aside class="project-page-sidebar" data-testid="project-page-sidebar">
+<div class="project-page-sidebar-block home-panel-home-desc gl-py-4 gl-border-b gl-border-b-subtle !gl-pt-2">
+<h2 class="gl-text-base gl-font-bold gl-leading-reset gl-text-heading gl-m-0 gl-mb-1">Project information</h2>
+</div>
+
+<div class="project-page-sidebar-block gl-py-4">
+<p class="gl-font-bold gl-text-strong gl-m-0 gl-mb-1">Created on</p>
+<span>November 06, 2023</span>
+</div>
+</aside>
+
+</div>
+<div class="project-page-layout-content">
+<div class="project-show-wiki">
+<div class="container-fluid container-limited">
+<div class="md gl-mt-3 gl-mb-3 js-wiki-content">
+<p data-sourcepos="1:1-3:106" dir="auto">This laboratory will concern basic search modeling in Constraint Programming.&#x000A;First, it will be introduced in the already known <code data-sourcepos="2:51-2:60">N-Queens</code> problem.&#x000A;Then, we will solve two new problems, where search modeling will have a big impact on the solving process.</p>&#x000A;<p data-sourcepos="5:1-5:97" dir="auto">All files required to solve the assignments are available via the repository, so clone it first.</p>&#x000A;<h1 id="user-content-search-modeling" data-sourcepos="7:1-7:18" dir="auto">Search Modeling<a href="#search-modeling" aria-label="Link to heading 'Search Modeling'" data-heading-content="Search Modeling" class="anchor"></a>&#x000A;</h1>&#x000A;<p data-sourcepos="9:1-9:238" dir="auto">So far, we haven't discussed the way the solver looks for the solution. There are many techniques to solve a constraint programming problem. However, basic techniques often perform a DFS (backtracking) search with two steps at every node:</p>&#x000A;<ul data-sourcepos="10:3-12:103" dir="auto">&#x000A;<li data-sourcepos="10:3-10:78">select variable — choose, which variable will receive value in this step</li>&#x000A;<li data-sourcepos="11:3-13:0">select value — choose, which value from the variable's domain will be chosen&#x000A;You may control this procedure in MiniZinc using search annotations just after the solve keyword. e.g.</li>&#x000A;</ul>&#x000A;<div class="gl-relative markdown-code-block js-markdown-code">&#x000A;<pre data-sourcepos="14:1-16:3" data-canonical-lang="minizinc" class="code highlight js-syntax-highlight language-minizinc" v-pre="true"><code><span id="LC1" class="line" lang="minizinc"><span class="k">solve</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="nx">int_search</span><span class="p">(</span><span class="kt">array</span><span class="p">,</span><span class="w"> </span><span class="nx">first_fail</span><span class="p">,</span><span class="w"> </span><span class="nx">indomain_min</span><span class="p">,</span><span class="w"> </span><span class="nx">complete</span><span class="p">)</span><span class="w"> </span><span class="k">satisfy</span><span class="p">;</span></span></code></pre>&#x000A;<copy-code></copy-code><insert-code-snippet></insert-code-snippet>&#x000A;</div>&#x000A;<p data-sourcepos="18:1-18:129" dir="auto">mean that integer (<code data-sourcepos="18:20-18:24">int</code>) variables from the <code data-sourcepos="18:46-18:52">array</code> should be searched exhaustively (<code data-sourcepos="18:87-18:96">complete</code>) according to a simple strategy:</p>&#x000A;<ul data-sourcepos="19:3-20:57" dir="auto">&#x000A;<li data-sourcepos="19:3-19:82">select variable which has the lowest amount of available values (<code data-sourcepos="19:70-19:81">first_fail</code>)</li>&#x000A;<li data-sourcepos="20:3-20:57">select the smallest available value (<code data-sourcepos="20:42-20:55">indomain_min</code>).</li>&#x000A;</ul>&#x000A;<p data-sourcepos="22:1-22:148" dir="auto">To define more interesting search strategies, one has to use the so-called MiniSearch language, which still isn't a part of the MiniZincIDE package.</p>&#x000A;<h2 id="user-content-n-queens-again" data-sourcepos="24:1-24:18" dir="auto">N-Queens Again<a href="#n-queens-again" aria-label="Link to heading 'N-Queens Again'" data-heading-content="N-Queens Again" class="anchor"></a>&#x000A;</h2>&#x000A;<ul data-sourcepos="26:3-32:49" dir="auto">&#x000A;<li data-sourcepos="26:3-26:31">Definition: same as always.</li>&#x000A;<li data-sourcepos="27:3-33:0">Assignments:&#x000A;<ul data-sourcepos="28:5-32:49">&#x000A;<li data-sourcepos="28:5-29:32">Run model using <code data-sourcepos="28:23-28:46">Gecode (Gist, bundled)</code> solver — select it in the configuration tab&#x000A;<ul data-sourcepos="29:7-29:32">&#x000A;<li data-sourcepos="29:7-29:32">play with the search :)</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="30:5-30:57">Check four different search strategies listed below</li>&#x000A;<li data-sourcepos="31:5-31:132">Read about the <a data-sourcepos="31:22-31:130" href="https://www.minizinc.org/doc-latest/en/lib-stdlib-annotations.html#search-annotations" rel="nofollow noreferrer noopener" target="_blank">different strategies</a>.</li>&#x000A;<li data-sourcepos="32:5-32:49">Choose the best one and put it in the model</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>&#x000A;<div class="gl-relative markdown-code-block js-markdown-code">&#x000A;<pre data-sourcepos="34:1-39:5" data-canonical-lang="minizinc" class="code highlight js-syntax-highlight language-minizinc" v-pre="true"><code><span id="LC1" class="line" lang="minizinc"><span class="nx">int_search</span><span class="p">(</span><span class="nx">rows</span><span class="p">,</span><span class="w"> </span><span class="nx">input_order</span><span class="p">,</span><span class="w"> </span><span class="nx">indomain_min</span><span class="p">,</span><span class="w"> </span><span class="nx">complete</span><span class="p">);</span></span>&#x000A;<span id="LC2" class="line" lang="minizinc"><span class="nx">int_search</span><span class="p">(</span><span class="nx">rows</span><span class="p">,</span><span class="w"> </span><span class="nx">input_order</span><span class="p">,</span><span class="w"> </span><span class="nx">indomain_median</span><span class="p">,</span><span class="w"> </span><span class="nx">complete</span><span class="p">);</span></span>&#x000A;<span id="LC3" class="line" lang="minizinc"><span class="nx">int_search</span><span class="p">(</span><span class="nx">rows</span><span class="p">,</span><span class="w"> </span><span class="nx">first_fail</span><span class="p">,</span><span class="w"> </span><span class="nx">indomain_min</span><span class="p">,</span><span class="w"> </span><span class="nx">complete</span><span class="p">);</span></span>&#x000A;<span id="LC4" class="line" lang="minizinc"><span class="nx">int_search</span><span class="p">(</span><span class="nx">rows</span><span class="p">,</span><span class="w"> </span><span class="nx">first_fail</span><span class="p">,</span><span class="w"> </span><span class="nx">indomain_median</span><span class="p">,</span><span class="w"> </span><span class="nx">complete</span><span class="p">);</span></span></code></pre>&#x000A;<copy-code></copy-code><insert-code-snippet></insert-code-snippet>&#x000A;</div>&#x000A;<h3 id="user-content-extra-other-annotations" data-sourcepos="41:1-41:28" dir="auto">Extra: Other Annotations<a href="#extra-other-annotations" aria-label="Link to heading 'Extra: Other Annotations'" data-heading-content="Extra: Other Annotations" class="anchor"></a>&#x000A;</h3>&#x000A;<p data-sourcepos="43:1-44:438" dir="auto">There are many types of annotations in MiniZinc, not all of them concern a search strategy.&#x000A;Occasionally, you would like to specify that a variable is created only for the output purpose and is not used in any constraint, you can use <code data-sourcepos="44:143-44:155">output_only</code> annotation (example usage at <a data-sourcepos="44:186-44:290" href="https://www.minizinc.org/doc-latest/en/efficient.html#modelling-choices" rel="nofollow noreferrer noopener" target="_blank">the bottom of this doc section</a>. The list of such "general" annotation is available <a data-sourcepos="44:344-44:437" href="https://www.minizinc.org/doc-latest/en/lib-stdlib-annotations.html#general-annotations" rel="nofollow noreferrer noopener" target="_blank">here</a>.</p>&#x000A;<p data-sourcepos="46:1-46:94" dir="auto">Below you can read about other interesting annotations <gl-emoji title="grinning face with smiling eyes" data-name="smile" data-unicode-version="6.0">😄</gl-emoji>. You are welcome to experiment!</p>&#x000A;<h4 id="user-content-redundant--symmetry-breaking-constraints" data-sourcepos="48:1-48:46" dir="auto">Redundant / Symmetry Breaking constraints<a href="#redundant--symmetry-breaking-constraints" aria-label="Link to heading 'Redundant / Symmetry Breaking constraints'" data-heading-content="Redundant / Symmetry Breaking constraints" class="anchor"></a>&#x000A;</h4>&#x000A;<p data-sourcepos="50:1-50:454" dir="auto">You may want to give solver some extra contextual info on your constraints. To achieve that, you can just use special predicates: <a data-sourcepos="50:131-50:301" href="https://www.minizinc.org/doc-latest/en/lib-stdlib-annotations.html#redundant-and-symmetry-breaking-constraints" rel="nofollow noreferrer noopener" target="_blank"><code data-sourcepos="50:132-50:153">redundant_constraint</code> and <code data-sourcepos="50:159-50:188">symmetry_breaking_constraint</code></a>, e.g., <code data-sourcepos="50:310-50:349">constraint redundant_constraint(x &lt; 3)</code> means the same as <code data-sourcepos="50:369-50:386">constraint x &lt; 3</code>, but gives solver additional info that the constraint is redundant.</p>&#x000A;<h4 id="user-content-restart" data-sourcepos="52:1-52:12" dir="auto">Restart<a href="#restart" aria-label="Link to heading 'Restart'" data-heading-content="Restart" class="anchor"></a>&#x000A;</h4>&#x000A;<p data-sourcepos="54:1-54:270" dir="auto">Restarting search is a very common strategy in optimization. You can use it in MiniZinc via <a data-sourcepos="54:93-54:201" href="https://www.minizinc.org/doc-latest/en/lib-stdlib-annotations.html#restart-annotations" rel="nofollow noreferrer noopener" target="_blank">restart annotations</a>. It's a nice trick to find "good" solutions for difficult problems.</p>&#x000A;<h4 id="user-content-gecode-specific-search-annotations" data-sourcepos="56:1-56:40" dir="auto">Gecode Specific Search Annotations:<a href="#gecode-specific-search-annotations" aria-label="Link to heading 'Gecode Specific Search Annotations:'" data-heading-content="Gecode Specific Search Annotations:" class="anchor"></a>&#x000A;</h4>&#x000A;<p data-sourcepos="58:1-58:494" dir="auto">The annotations themselves are very closely tied to the chosen solver. Therefore, MiniZinc officially supports only the most generic strategies, but... there is hope for the better future. Gecode is a solver developed by the MiniZinc creator and therefore has received some extra love from the creator and got some additional <a data-sourcepos="58:327-58:414" href="https://www.minizinc.org/doc-latest/en/lib-gecode-annotations.html" rel="nofollow noreferrer noopener" target="_blank">search annotations</a> which include "activity"–based search, learning from the previous experience.</p>&#x000A;<p data-sourcepos="60:1-60:62" dir="auto">Recommended: try <code data-sourcepos="60:18-60:27">activity</code> and <code data-sourcepos="60:33-60:37">afc</code> annotations with Gecode.</p>&#x000A;<h2 id="user-content-packing-problem" data-sourcepos="62:1-62:19" dir="auto">Packing Problem<a href="#packing-problem" aria-label="Link to heading 'Packing Problem'" data-heading-content="Packing Problem" class="anchor"></a>&#x000A;</h2>&#x000A;<p data-sourcepos="64:1-64:164" dir="auto">The packing problem is a problem of fitting n-dimensional solids in the n-dimensional container. We will discuss a simple case — packing squares into a rectangle.</p>&#x000A;<p data-sourcepos="66:1-66:86" dir="auto"><a class="no-attachment-icon" href="/agh-courses/25/cp/wiki/04/-/wikis/uploads/5976c4ead6e102bff1e41b66a5e31465/square_packing.png" target="_blank" rel="noopener noreferrer" data-canonical-src="uploads/5976c4ead6e102bff1e41b66a5e31465/square_packing.png"><img data-sourcepos="66:1-66:86" alt="Square Packing Problem" decoding="async" class="lazy" data-src="/agh-courses/25/cp/wiki/04/-/wikis/uploads/5976c4ead6e102bff1e41b66a5e31465/square_packing.png" data-canonical-src="uploads/5976c4ead6e102bff1e41b66a5e31465/square_packing.png"></a></p>&#x000A;<ul data-sourcepos="68:3-88:86" dir="auto">&#x000A;<li data-sourcepos="68:3-68:191">&#x000A;<strong data-sourcepos="68:5-68:18">Definition</strong>: having <code data-sourcepos="68:28-68:30">n</code> squares sized accordingly <code data-sourcepos="68:58-68:74">1x1,2x2,...,nxn</code>, we have to find the rectangle with the smallest area, inside which we can fit all the squares without overlapping.</li>&#x000A;<li data-sourcepos="69:3-71:63">&#x000A;<strong data-sourcepos="69:5-69:16">Stage 1:</strong>&#x000A;<ul data-sourcepos="70:5-71:63">&#x000A;<li data-sourcepos="70:5-70:30">Fill the domains' bounds</li>&#x000A;<li data-sourcepos="71:5-71:63">Tip — use set comprehension (np. <code data-sourcepos="71:42-71:62">[... |i in SQUARES]</code>)</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="72:3-73:132">&#x000A;<strong data-sourcepos="72:5-72:16">Stage 2:</strong>&#x000A;<ul data-sourcepos="73:5-73:132">&#x000A;<li data-sourcepos="73:5-73:132">Fill the missing constraints (don't use global constraints, just simple arithmetic), so the model can be solved for small <code data-sourcepos="73:129-73:131">n</code>&#x000A;</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="74:3-76:74">&#x000A;<strong data-sourcepos="74:5-74:16">Stage 3:</strong>&#x000A;<ul data-sourcepos="75:5-76:74">&#x000A;<li data-sourcepos="75:5-75:149">Replace your constraint with <a data-sourcepos="75:36-75:149" href="https://www.minizinc.org/doc-latest/en/lib-globals.html?highlight=diffn#index-109" rel="nofollow noreferrer noopener" target="_blank">the global constraint <code data-sourcepos="75:59-75:65">diffn</code></a>&#x000A;</li>&#x000A;<li data-sourcepos="76:5-76:74">Tip — you may have to introduce a new array parameter to the model</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="77:3-81:164">&#x000A;<strong data-sourcepos="77:5-77:16">Stage 4:</strong>&#x000A;<ul data-sourcepos="78:5-81:164">&#x000A;<li data-sourcepos="78:5-78:31">Add redundant constraints</li>&#x000A;<li data-sourcepos="79:5-79:163">Tip 1 — how is the packing related to the scheduling, e.g., <a data-sourcepos="79:69-79:162" href="https://www.minizinc.org/doc-latest/en/predicates.html#cumulative" rel="nofollow noreferrer noopener" target="_blank">the cumulative constraint</a>?</li>&#x000A;<li data-sourcepos="80:5-80:83">Tip 2 — scheduling is a kind of packing where time is one of the dimensions</li>&#x000A;<li data-sourcepos="81:5-81:164">Tip 3 — <a data-sourcepos="81:17-81:164" href="/agh-courses/25/cp/wiki/04/-/wikis/uploads/78236a1c24ba7c4894b1cac67dc84720/cumulative.png" data-canonical-src="uploads/78236a1c24ba7c4894b1cac67dc84720/cumulative.png">this picture satisfies <code data-sourcepos="81:41-81:52">cumulative</code> constraint, but it doesn't satisfy packing constraint</a>&#x000A;</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="82:3-87:316">&#x000A;<strong data-sourcepos="82:5-82:16">Stage 5:</strong>&#x000A;<ul data-sourcepos="83:5-87:316">&#x000A;<li data-sourcepos="83:5-83:88">Change the search procedure, so the solver would first try the smallest containers</li>&#x000A;<li data-sourcepos="84:5-84:87">Change the search procedure, so the solver would place the biggest squares first.</li>&#x000A;<li data-sourcepos="85:5-85:151">Tip 1 — to force the search order, you have to put the variables in a specific order to the array and then use <code data-sourcepos="85:120-85:132">input_order</code> search annotation.</li>&#x000A;<li data-sourcepos="86:5-86:341">Tip 2 — you can put the <code data-sourcepos="86:33-86:40">height</code> and <code data-sourcepos="86:46-86:52">width</code> in one array (e.g., <code data-sourcepos="86:74-86:90">[height, width]</code>), and squares' coordinates in the second (e.g., <code data-sourcepos="86:140-86:185">[x[n], y[n], x[n-1], y[n-1], ..., x[1], y[1]</code>). Then use <a data-sourcepos="86:198-86:307" href="https://www.minizinc.org/doc-latest/en/mzn_search.html?highlight=seq_search#index-8" rel="nofollow noreferrer noopener" target="_blank"><code data-sourcepos="86:199-86:210">seq_search</code> annotation</a> to combine two search procedures</li>&#x000A;<li data-sourcepos="87:5-87:316">Tip 3 — you can achieve a specific order using array comprehensions, but of course, you can also try a built-in function, e.g., <a data-sourcepos="87:137-87:223" href="https://www.minizinc.org/doc-latest/en/lib-builtins.html?highlight=reverse" rel="nofollow noreferrer noopener" target="_blank"><code data-sourcepos="87:138-87:146">reverse</code></a> or <a data-sourcepos="87:228-87:315" href="https://www.minizinc.org/doc-latest/en/mzn_search.html?highlight=seq_search" rel="nofollow noreferrer noopener" target="_blank"><code data-sourcepos="87:229-87:237">sort_by</code></a>.</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="88:3-89:0">Evaluate the new search procedure with the more difficult instances (bigger <code data-sourcepos="88:81-88:83">n</code>))</li>&#x000A;</ul>&#x000A;<h2 id="user-content-practical-use-case--scheduling" data-sourcepos="90:1-90:36" dir="auto">Practical Use-Case — Scheduling<a href="#practical-use-case--scheduling" aria-label="Link to heading 'Practical Use-Case — Scheduling'" data-heading-content="Practical Use-Case — Scheduling" class="anchor"></a>&#x000A;</h2>&#x000A;<p data-sourcepos="92:1-92:85" dir="auto">Now, you're ready to handle a more practical case based on a real scheduling problem.</p>&#x000A;<p data-sourcepos="94:1-94:492" dir="auto">The KrakPass factory is producing positive grades for AGH students. Thanks to the large number of employees, it can grade several students at once. Their schedule is an array of non-negative numbers for every hour the factory operates. For example, the following schedule <code data-sourcepos="94:273-94:293">[3,4,4,5,4,4,3,0,1]</code> means that the factory is open for <code data-sourcepos="94:330-94:332">9</code> hours, during the first hour it can handle <code data-sourcepos="94:377-94:379">3</code> students at the same time, during the second hour <code data-sourcepos="94:431-94:433">4</code>, …, in the eighth hour <code data-sourcepos="94:460-94:462">0</code> and in the ninth <code data-sourcepos="94:481-94:483">1</code> student.</p>&#x000A;<p data-sourcepos="96:1-96:424" dir="auto">During the exam session the positive grades are in demand and therefore students have to book their visits beforehand using an innovative system "Virtual KrakPass". They specify the exact hour their prefer (e.g., 1st hour or the 4th one). Thanks to the complex machine learning algorithms, "Virtual KrakPass" can predict how many minutes it will take to handle each student. In other words, every student has two parameters:</p>&#x000A;<ol data-sourcepos="98:1-99:48" dir="auto">&#x000A;<li data-sourcepos="98:1-98:104">during what hour they want to appear (<code data-sourcepos="98:42-98:44">1</code> means they would like to be graded in first <code data-sourcepos="98:90-98:95">0-59</code> minutes)</li>&#x000A;<li data-sourcepos="99:1-99:48">how many minutes it will take to grade them.</li>&#x000A;</ol>&#x000A;<p data-sourcepos="101:1-101:190" dir="auto">Create a MiniZinc model that will plan the students' visits, so their grading wouldn't exceed the factory schedule limits and their visits happened as close as possible to their preferences.</p>&#x000A;<h3 id="user-content-some-useful-remarks" data-sourcepos="103:1-103:24" dir="auto">Some Useful Remarks:<a href="#some-useful-remarks" aria-label="Link to heading 'Some Useful Remarks:'" data-heading-content="Some Useful Remarks:" class="anchor"></a>&#x000A;</h3>&#x000A;<ul data-sourcepos="105:1-108:232" dir="auto">&#x000A;<li data-sourcepos="105:1-105:163">student doesn't have to appear on the hour (they may be planned to be tested on 08:17 for example) — you may want to count time using minutes instead of hours;</li>&#x000A;<li data-sourcepos="106:1-106:345">&#x000A;<code data-sourcepos="106:3-106:26">visits_preferred_hours</code> are just preferences — student may arrive before/after, it just should be close to the preferred time; the objective should be a sum of <em data-sourcepos="106:166-106:174">squared</em> violations, e.g., if student is scheduled to be graded at <code data-sourcepos="106:234-106:237">56</code> and their preference was <code data-sourcepos="106:264-106:266">2</code> (2nd hour, so starting from 60th minute), the preference violation equals <code data-sourcepos="106:342-106:344">4</code>.</li>&#x000A;<li data-sourcepos="107:1-107:182">if a student wants to be graded in the 2nd hour, the minute the grading should start falls inside time window <code data-sourcepos="107:113-107:123">[60, 119]</code> including <code data-sourcepos="107:135-107:138">60</code> and <code data-sourcepos="107:144-107:148">119</code> but excluding the <code data-sourcepos="107:168-107:172">120</code>-th minute</li>&#x000A;<li data-sourcepos="108:1-108:232">consider it to be a packing problem with a <em data-sourcepos="108:46-108:53">rugged</em> container — the best way to make the container irregular is to add <em data-sourcepos="108:124-108:130">dummy</em> students using factory resources, e.g., for data <code data-sourcepos="108:181-108:201">[3,4,4,5,4,4,3,0,1]</code> you can visualize it this way:</li>&#x000A;</ul>&#x000A;<p data-sourcepos="110:1-110:66" dir="auto"><a class="no-attachment-icon" href="/agh-courses/25/cp/wiki/04/-/wikis/uploads/1eb6a8168df18ff40bb34c4991b5b62a/krakpass.png" target="_blank" rel="noopener noreferrer" data-canonical-src="uploads/1eb6a8168df18ff40bb34c4991b5b62a/krakpass.png"><img data-sourcepos="110:1-110:66" alt="krakpass" decoding="async" class="lazy" data-src="/agh-courses/25/cp/wiki/04/-/wikis/uploads/1eb6a8168df18ff40bb34c4991b5b62a/krakpass.png" data-canonical-src="uploads/1eb6a8168df18ff40bb34c4991b5b62a/krakpass.png"></a></p>&#x000A;<ul data-sourcepos="112:1-116:138" dir="auto">&#x000A;<li data-sourcepos="112:1-116:138">finally, use some search annotations to help solver find the solution quickly — make it look first for the solution with the lowest possible violations.&#x000A;<ul data-sourcepos="113:3-116:138">&#x000A;<li data-sourcepos="113:3-115:48">&#x000A;<strong data-sourcepos="113:5-113:11">Tip</strong>: You may want to use <code data-sourcepos="113:34-113:64">seq_search([annotation, ...])</code> (<a data-sourcepos="113:67-113:194" href="https://www.minizinc.org/doc-latest/en/lib-stdlib-annotations.html#mzn-ref-stdlib-annotations-search-seq-search" rel="nofollow noreferrer noopener" target="_blank">documentation</a>) to combine several search annotations, e.g.,&#x000A;<ul data-sourcepos="114:5-115:48">&#x000A;<li data-sourcepos="114:5-114:60">first, make sure students are not scheduled too early;</li>&#x000A;<li data-sourcepos="115:5-115:48">secondly, make sure they are not too late.</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="116:3-116:138">After adding the search annotations, you should be able to solve the <code data-sourcepos="116:74-116:93">krakpass_large.dzn</code> instance using the built-in <code data-sourcepos="116:123-116:130">gecode</code> solver.</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</main>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="js-dynamic-panel paneled-view contextual-panel gl-@container/panel !gl-absolute gl-shadow-lg @xl/content-panels:gl-w-1/2 @xl/content-panels:gl-shadow-none @xl/content-panels:!gl-relative" id="contextual-panel-portal"></div>
+</div>
+</div>
+
+</div>
+
+
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="EDGlw7NMiTG8o8pH8Ix8zw==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,346 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="gl-system ui-indigo with-top-bar with-header application-chrome page-with-panels with-gl-container-queries " lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>agh-courses / 2025-2026 / Constraint Programming / wiki / Lab 02. Instructions · GitLab</title>
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https://gitlab.com/assets/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=100;gon.asset_host=null;gon.webpack_public_path="/assets/webpack/";gon.relative_url_root="";gon.user_color_mode="gl-system";gon.user_color_scheme="white";gon.markdown_surround_selection=true;gon.markdown_automatic_lists=true;gon.markdown_maintain_indentation=false;gon.math_rendering_limits_enabled=true;gon.allow_immediate_namespaces_deletion=true;gon.iframe_rendering_enabled=false;gon.iframe_rendering_allowlist=[];gon.sentry_dsn="https://f5573e26de8f4293b285e556c35dfd6e@new-sentry.gitlab.net/4";gon.sentry_environment="gprd";gon.sentry_clientside_traces_sample_rate=0.05;gon.recaptcha_api_server_url="https://www.recaptcha.net/recaptcha/api.js";gon.recaptcha_sitekey="6LfAERQTAAAAAL4GYSiAMGLbcLyUIBSfPrDNJgeC";gon.gitlab_url="https://gitlab.com";gon.promo_url="https://about.gitlab.com";gon.forum_url="https://forum.gitlab.com";gon.docs_url="https://docs.gitlab.com";gon.revision="3da2e793296";gon.feature_category="groups_and_projects";gon.gitlab_logo="/assets/gitlab_logo-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png";gon.secure=true;gon.sprite_icons="/assets/icons-4c8dcc4ae95b72054c5ab1467cf841cbe8c4717ac179b67e7e1f80a72d92038a.svg";gon.sprite_file_icons="/assets/file_icons/file_icons-90de312d3dbe794a19dee8aee171f184ff69ca9c9cf9fe37e8b254e84c3a1543.svg";gon.illustrations_path="/images/illustrations.svg";gon.emoji_sprites_css_path="/assets/emoji_sprites-bd26211944b9d072037ec97cb138f1a52cd03ef185cd38b8d1fcc963245199a1.css";gon.emoji_backend_version=4;gon.gridstack_css_path="/assets/lazy_bundles/gridstack-f42069e5c7b1542688660592b48f2cbd86e26b77030efd195d124dbd8fe64434.css";gon.test_env=false;gon.disable_animations=null;gon.suggested_label_colors={"#cc338b":"Magenta-pink","#dc143c":"Crimson","#c21e56":"Rose red","#cd5b45":"Dark coral","#ed9121":"Carrot orange","#eee600":"Titanium yellow","#009966":"Green-cyan","#8fbc8f":"Dark sea green","#6699cc":"Blue-gray","#e6e6fa":"Lavender","#9400d3":"Dark violet","#330066":"Deep violet","#36454f":"Charcoal grey","#808080":"Gray"};gon.first_day_of_week=0;gon.time_display_relative=true;gon.time_display_format=0;gon.ee=true;gon.jh=false;gon.dot_com=true;gon.uf_error_prefix="UF";gon.pat_prefix="glpat-";gon.keyboard_shortcuts_enabled=true;gon.diagramsnet_url="https://embed.diagrams.net";gon.version="18.7.0-pre";gon.current_user_id=13853152;gon.current_username="Mateoswiatek";gon.current_user_fullname="Mateusz Świątek";gon.current_user_avatar_url="https://secure.gravatar.com/avatar/9caca4b73776d9cb0a2ae974a33c6a35b0ef282bc2387bbad26192f31d0fc2d8?s=80\u0026d=identicon";gon.text_editor="not_set";gon.features={"uiForOrganizations":false,"organizationSwitching":false,"findAndReplace":false,"removeMonitorMetrics":true,"newProjectCreationForm":false,"workItemsClientSideBoards":false,"glqlWorkItems":false,"glqlAggregation":false,"glqlTypescript":true,"paneledView":true,"archiveGroup":true,"accessibleLoadingButton":false,"allowIframesInMarkdown":false,"projectStudioEnabled":true,"advancedContextResolver":true,"duoUiNext":false,"inlineBlame":false,"issueEmailParticipants":true,"editBranchRules":true,"pageSpecificStyles":false,"directoryCodeDropdownUpdates":true,"repositoryFileTreeBrowser":false,"repositoryLockInformation":false,"useDuoContextExclusion":true,"duoWorkflowInCi":true,"aiExperimentSastFpDetection":false};gon.roadmap_epics_limit=1000;gon.ai={"chat":{"total_model_token":4096,"max_response_token":300,"input_content_limit":15184}};gon.subscriptions_url="https://customers.gitlab.com";gon.subscriptions_legacy_sign_in_url="https://customers.gitlab.com/customers/sign_in?legacy=true";gon.billing_accounts_url="https://customers.gitlab.com/billing_accounts";gon.payment_form_url="https://customers.gitlab.com/payment_forms/cc_validation";gon.payment_validation_form_id="payment_method_validation";gon.licensed_features={"remoteDevelopment":true};
+//]]>
+</script>
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+window.uploads_path = "/agh-courses/25/cp/wiki/02/uploads";
+
+
+
+//]]>
+</script>
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-7ca28e27e17da6aea3531cb027b5a4bc6fb6473f426384604c0bf9d7c473d2af.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_dark-9b84093284ebe801f10109cb0b70afa7b077591132a34aedcbeaf201c7e6a0aa.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/page_bundles/project-84c702fec0d46898f3752e2d11cffd1198f91161651f5a64ba96d3320173c207.css" /><link rel="stylesheet" href="/assets/page_bundles/tree-87852cf755928d514a7c18c7bc442022c92b8887a274746dadf9ab0f18417de8.css" /><link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css" /><link rel="stylesheet" href="/assets/page_bundles/work_items-9f34e9e1785e95144a97edb25299b8dd0d2e641f7efb2d8b7bea3717104ed8f2.css" /><link rel="stylesheet" href="/assets/page_bundles/notes_shared-8f7a9513332533cc4a53b3be3d16e69570e82bc87b3f8913578eaeb0dce57e21.css" />
+<link rel="stylesheet" href="/assets/tailwind_cqs-44a612af8fc718b6aafe54e88acfeaf7adf1fb00ba67321833a12b9ccb7bb9e5.css" />
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-9669e20d2bac0337d55977e9ba6cf7540fcbb9d11ec33b69e51bae1d72e40db3.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/highlight/themes/monokai-3616e2ebbccdc0560d02bdeb553578d719b3022b83478167be90ae26d6d93dd8.css" media="(prefers-color-scheme: dark)" />
+
+<script src="/assets/webpack/runtime.1956d2aa.bundle.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/main.8054de5e.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/tracker.85adcc5f.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/analytics.1f5b93d6.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplowprd.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true};
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-7","data":{"environment":"production","source":"gitlab-rails","correlation_id":"9a7dce89f30a0287-ATL","plan":"free","extra":{},"user_id":13853152,"global_user_id":"TK3nuqxC+486AEXBCgz08TPEp6DCidgEXKW8ASiaU/c=","user_type":"human","is_gitlab_team_member":false,"namespace_id":116942250,"ultimate_parent_namespace_id":2749443,"project_id":62672131,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","instance_id":"ea8bf810-1d6f-4a6a-b4fd-93e8cbd8b57f","unique_instance_id":"b5fa1911-0638-5651-8ec4-5b892ef92e35","host_name":"gitlab.com","instance_version":"18.7.0","context_generated_at":"2025-12-02T21:09:42.819Z"}};
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace116942250/project62672131";
+gl.maskedDefaultReferrerUrl = "https://gitlab.com/groups/namespace/-/shared";
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = ["ai_question_category","perform_completion_worker","process_gitlab_duo_question","agent_platform_session_created","agent_platform_session_dropped","agent_platform_session_finished","agent_platform_session_resumed","agent_platform_session_started","agent_platform_session_stopped","ai_response_time","ci_repository_xray_artifact_created","cleanup_stuck_agent_platform_session","click_purchase_seats_button_group_duo_pro_home_page","code_suggestion_accepted_in_ide","code_suggestion_rejected_in_ide","code_suggestion_shown_in_ide","code_suggestions_connection_details_rate_limit_exceeded","code_suggestions_direct_access_rate_limit_exceeded","code_suggestions_rate_limit_exceeded","create_ai_catalog_item","create_ai_catalog_item_consumer","create_ai_self_hosted_model","default_answer","delete_ai_catalog_item","delete_ai_catalog_item_consumer","delete_ai_self_hosted_model","detected_high_comment_temperature","detected_repeated_high_comment_temperature","encounter_duo_code_review_error_during_review","error_answer","excluded_files_from_duo_code_review","execute_llm_method","find_no_issues_duo_code_review_after_review","find_nothing_to_review_duo_code_review_on_mr","finish_duo_workflow_execution","finish_mcp_tool_call","forced_high_temperature_commenting","i_quickactions_q","include_repository_xray_data_into_code_generation_prompt","mention_gitlabduo_in_mr_comment","post_comment_duo_code_review_on_diff","process_gitlab_duo_slash_command","react_thumbs_down_on_duo_code_review_comment","react_thumbs_up_on_duo_code_review_comment","request_ask_help","request_duo_chat_response","request_review_duo_code_review_on_mr_by_author","request_review_duo_code_review_on_mr_by_non_author","requested_comment_temperature","retry_duo_workflow_execution","start_duo_workflow_execution","start_mcp_tool_call","submit_gitlab_duo_question","tokens_per_embedding","tokens_per_user_request_prompt","tokens_per_user_request_response","trigger_ai_catalog_item","troubleshoot_job","update_ai_catalog_item","update_ai_catalog_item_consumer","update_ai_self_hosted_model","update_model_selection_feature","update_self_hosted_ai_feature_to_vendored_model","view_ai_catalog_item","view_ai_catalog_item_index"];
+gl.onlySendDuoEvents = false;
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application-7ca28e27e17da6aea3531cb027b5a4bc6fb6473f426384604c0bf9d7c473d2af.css" as="style" type="text/css" nonce="d3EyS39fuME7eZ8CyZ8Liw==">
+<link rel="preload" href="/assets/highlight/themes/white-9669e20d2bac0337d55977e9ba6cf7540fcbb9d11ec33b69e51bae1d72e40db3.css" as="style" type="text/css" nonce="d3EyS39fuME7eZ8CyZ8Liw==">
+<link crossorigin="" href="https://snowplowprd.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-9892dc17af892e03de41625c0ee325117a3b8ee4ba6005f3a3eac68510030aed.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-f96f17332d67b21ada2dfba5f0c0e1d5801eab99330472057bf18edd93d4ccf7.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
+<link rel="preload" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" as="style" type="text/css" nonce="d3EyS39fuME7eZ8CyZ8Liw==">
+
+
+
+<script src="/assets/webpack/sentry.0193c2ee.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.9b1bdddd.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/super_sidebar.5ceaee1d.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-3888eb97.2fd41a56.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/dbe6a049.1fc40ea6.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.edit-pages.projects.sni-42df7d4c.cf2fed02.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/467359d4.634b8aee.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/ea7ea8c3.58ef5d7f.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show-pages.projects.tre-c684fcf6.e157f467.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/499d8988.4aa04d40.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.get_started.show-pages.projects.show-pages.projects.tree.show.92e86488.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.commits.show-pages.projects.show-pages.projects.tree.show.7f4c52b7.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.9b22b1ad.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.e47324af.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/commons-pages.groups.show-pages.projects.home_panel-pages.projects.show.f1e3dbe2.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+<script src="/assets/webpack/pages.projects.show.4f3b4737.chunk.js" defer="defer" nonce="vY0SCTzwddd5+SXKqmLQtQ=="></script>
+
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="agh-courses / 2025-2026 / Constraint Programming / wiki / Lab 02. Instructions · GitLab" property="og:title">
+<meta content="GitLab.com" property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/agh-courses/25/cp/wiki/02" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="agh-courses / 2025-2026 / Constraint Programming / wiki / Lab 02. Instructions · GitLab" property="twitter:title">
+<meta content="GitLab.com" property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="PiXm02qByI3cjPWSQYOIHlRnU83d1MC6L6uW49yJVko633E_IgQu1ZaZVc9aw-9aAtTA5MOTYfB6A3sM5Z986w" />
+<meta name="csp-nonce" content="vY0SCTzwddd5+SXKqmLQtQ==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+<link rel="alternate" type="application/atom+xml" title="Lab 02. Instructions activity" href="/agh-courses/25/cp/wiki/02.atom?feed_token=glft-735b29970d37a5e1b4d5c7bf2fc21a8f5c25e6179c71dd1c95f7b52ce7463128-13853152" />
+
+
+
+
+<meta content="GitLab.com" name="description">
+<meta content="#222261" name="theme-color">
+</head>
+
+<body class="tab-width-8 gl-browser-firefox gl-platform-linux " data-group="wiki" data-group-full-path="agh-courses/25/cp/wiki" data-namespace-id="116942250" data-page="projects:show" data-page-type-id="02" data-project="02" data-project-full-path="agh-courses/25/cp/wiki/02" data-project-id="62672131" data-project-studio-available="true" data-project-studio-enabled="true">
+<div id="js-tooltips-container"></div>
+
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isFirefox":true,"isLinux":true};
+
+
+//]]>
+</script>
+
+
+<header class="super-topbar js-super-topbar"></header>
+<div class="layout-page js-page-layout page-with-super-sidebar">
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+const outer = document.createElement('div');
+outer.style.visibility = 'hidden';
+outer.style.overflow = 'scroll';
+document.body.appendChild(outer);
+const inner = document.createElement('div');
+outer.appendChild(inner);
+const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+outer.parentNode.removeChild(outer);
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+
+//]]>
+</script><aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{}" data-force-desktop-expanded-sidebar="" data-is-saas="true" data-root-path="/" data-sidebar="{&quot;whats_new_most_recent_release_items_count&quot;:3,&quot;whats_new_version_digest&quot;:&quot;2438dfd35ebf005347cec38782a7966a461059d083e95f51359ef349b17bdde9&quot;,&quot;whats_new_read_articles&quot;:[],&quot;whats_new_mark_as_read_path&quot;:&quot;/-/whats_new/mark_as_read&quot;,&quot;is_logged_in&quot;:true,&quot;compare_plans_url&quot;:&quot;https://about.gitlab.com/pricing&quot;,&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Your work&quot;,&quot;link&quot;:&quot;/&quot;,&quot;icon&quot;:&quot;work&quot;},{&quot;title&quot;:&quot;Explore&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;},{&quot;title&quot;:&quot;Profile&quot;,&quot;link&quot;:&quot;/-/user_settings/profile&quot;,&quot;icon&quot;:&quot;profile&quot;},{&quot;title&quot;:&quot;Preferences&quot;,&quot;link&quot;:&quot;/-/profile/preferences&quot;,&quot;icon&quot;:&quot;preferences&quot;}],&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;Lab 02. Instructions&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg&quot;,&quot;entity_id&quot;:62672131,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02&quot;,&quot;link_classes&quot;:&quot;shortcuts-project&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;manage_menu&quot;,&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/activity&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/activity&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/project_members&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/labels&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;plan_menu&quot;,&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Issues&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;pill_count_field&quot;:&quot;openIssuesCount&quot;,&quot;pill_count_dynamic&quot;:false,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/boards&quot;,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/milestones&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/wikis/home&quot;,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;monitor_menu&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues/service_desk&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues/service_desk&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false}],&quot;current_context_header&quot;:&quot;Project&quot;,&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;docs_path&quot;:&quot;/help/docs&quot;,&quot;display_whats_new&quot;:true,&quot;show_version_check&quot;:false,&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;settings_path&quot;:&quot;/search/settings&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:116942250,&quot;name&quot;:&quot;wiki&quot;,&quot;full_name&quot;:&quot;agh-courses / 2025-2026 / Constraint Programming / wiki&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/agh-courses/25/cp/wiki/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/agh-courses/25/cp/wiki/-/merge_requests?assignee_username=Mateoswiatek&quot;},&quot;project&quot;:{&quot;id&quot;:62672131,&quot;name&quot;:&quot;Lab 02. Instructions&quot;},&quot;project_metadata&quot;:{&quot;issues_path&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues&quot;},&quot;code_search&quot;:true,&quot;scope&quot;:null,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Milestones&quot;,&quot;href&quot;:&quot;/dashboard/milestones&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-milestones&quot;},{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/dashboard/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Activity&quot;,&quot;href&quot;:&quot;/dashboard/activity&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-activity&quot;},{&quot;title&quot;:&quot;Groups&quot;,&quot;href&quot;:&quot;/dashboard/groups&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-groups&quot;},{&quot;title&quot;:&quot;Projects&quot;,&quot;href&quot;:&quot;/dashboard/projects&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-projects&quot;},{&quot;title&quot;:&quot;Create a new issue&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues/new&quot;,&quot;css_class&quot;:&quot;shortcuts-new-issue&quot;}],&quot;terms&quot;:&quot;/-/users/terms&quot;,&quot;is_admin&quot;:false,&quot;name&quot;:&quot;Mateusz Świątek&quot;,&quot;username&quot;:&quot;Mateoswiatek&quot;,&quot;admin_url&quot;:&quot;/admin&quot;,&quot;admin_mode&quot;:{&quot;admin_mode_feature_enabled&quot;:false,&quot;admin_mode_active&quot;:false,&quot;enter_admin_mode_url&quot;:&quot;/admin/session/new&quot;,&quot;leave_admin_mode_url&quot;:&quot;/admin/session/destroy&quot;,&quot;user_is_admin&quot;:false},&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/9caca4b73776d9cb0a2ae974a33c6a35b0ef282bc2387bbad26192f31d0fc2d8?s=80\u0026d=identicon&quot;,&quot;has_link_to_profile&quot;:true,&quot;link_to_profile&quot;:&quot;/Mateoswiatek&quot;,&quot;logo_url&quot;:null,&quot;status&quot;:{&quot;can_update&quot;:true,&quot;busy&quot;:null,&quot;customized&quot;:null,&quot;availability&quot;:&quot;&quot;,&quot;emoji&quot;:null,&quot;message_html&quot;:null,&quot;message&quot;:null,&quot;clear_after&quot;:null},&quot;settings&quot;:{&quot;has_settings&quot;:true,&quot;profile_path&quot;:&quot;/-/user_settings/profile&quot;,&quot;profile_preferences_path&quot;:&quot;/-/profile/preferences&quot;},&quot;user_counts&quot;:{&quot;assigned_issues&quot;:0,&quot;assigned_merge_requests&quot;:0,&quot;review_requested_merge_requests&quot;:0,&quot;todos&quot;:0,&quot;last_update&quot;:1764709782912},&quot;can_sign_out&quot;:true,&quot;sign_out_link&quot;:&quot;/users/sign_out&quot;,&quot;issues_dashboard_path&quot;:&quot;/dashboard/issues?assignee_username=Mateoswiatek&quot;,&quot;merge_request_dashboard_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;todos_dashboard_path&quot;:&quot;/dashboard/todos&quot;,&quot;create_new_menu_groups&quot;:[{&quot;name&quot;:&quot;In this project&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New issue&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues/new&quot;,&quot;component&quot;:&quot;create_new_work_item_modal&quot;,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_issue&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_issue&quot;}}]},{&quot;name&quot;:&quot;In GitLab&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New project/repository&quot;,&quot;href&quot;:&quot;/projects/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_project&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_project&quot;}},{&quot;text&quot;:&quot;New group&quot;,&quot;href&quot;:&quot;/groups/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_group&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_group&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_snippet&quot;}}]}],&quot;projects_path&quot;:&quot;/dashboard/projects&quot;,&quot;groups_path&quot;:&quot;/dashboard/groups&quot;,&quot;gitlab_com_but_not_canary&quot;:true,&quot;gitlab_com_and_canary&quot;:null,&quot;canary_toggle_com_url&quot;:&quot;https://next.gitlab.com&quot;,&quot;current_context&quot;:{&quot;namespace&quot;:&quot;projects&quot;,&quot;item&quot;:{&quot;id&quot;:62672131,&quot;name&quot;:&quot;Lab 02. Instructions&quot;,&quot;namespace&quot;:&quot;agh-courses / 2025-2026 / Constraint Programming / wiki / Lab 02. Instructions&quot;,&quot;fullPath&quot;:&quot;agh-courses/25/cp/wiki/02&quot;,&quot;webUrl&quot;:&quot;/agh-courses/25/cp/wiki/02&quot;,&quot;avatarUrl&quot;:&quot;/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg&quot;}},&quot;pinned_items&quot;:[&quot;project_issue_list&quot;,&quot;project_merge_request_list&quot;],&quot;update_pins_url&quot;:&quot;/-/users/pins&quot;,&quot;is_impersonating&quot;:false,&quot;stop_impersonation_path&quot;:&quot;/admin/impersonation&quot;,&quot;track_visits_path&quot;:&quot;/-/track_namespace_visits&quot;,&quot;work_items&quot;:{&quot;full_path&quot;:&quot;agh-courses/25/cp/wiki/02&quot;,&quot;has_issuable_health_status_feature&quot;:&quot;false&quot;,&quot;issues_list_path&quot;:&quot;/agh-courses/25/cp/wiki/02/-/issues&quot;,&quot;labels_manage_path&quot;:&quot;/agh-courses/25/cp/wiki/02/-/labels&quot;,&quot;can_admin_label&quot;:&quot;false&quot;,&quot;has_issue_weights_feature&quot;:&quot;false&quot;,&quot;has_iterations_feature&quot;:&quot;false&quot;,&quot;work_item_planning_view_enabled&quot;:&quot;false&quot;},&quot;has_multiple_organizations&quot;:false}"></aside>
+
+
+<div class="panels-container gl-flex gl-gap-3">
+<div class="content-panels gl-flex-1 gl-w-full gl-flex gl-gap-3 gl-relative js-content-panels gl-@container/content-panels">
+<div class="js-static-panel static-panel content-wrapper gl-relative paneled-view gl-flex-1 gl-overflow-y-auto gl-bg-default" id="static-panel-portal">
+<div class="panel-header">
+<div class="broadcast-wrapper">
+
+
+
+</div>
+<div class="top-bar-fixed container-fluid gl-rounded-t-lg gl-sticky gl-top-0 gl-left-0 gl-mx-0 gl-w-full" data-testid="top-bar">
+<div class="top-bar-container gl-flex gl-items-center gl-gap-2">
+<div class="gl-grow gl-basis-0 gl-flex gl-items-center gl-justify-start gl-gap-3">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"agh-courses","item":"https://gitlab.com/agh-courses"},{"@type":"ListItem","position":2,"name":"2025-2026","item":"https://gitlab.com/agh-courses/25"},{"@type":"ListItem","position":3,"name":"Constraint Programming","item":"https://gitlab.com/agh-courses/25/cp"},{"@type":"ListItem","position":4,"name":"wiki","item":"https://gitlab.com/agh-courses/25/cp/wiki"},{"@type":"ListItem","position":5,"name":"Lab 02. Instructions","item":"https://gitlab.com/agh-courses/25/cp/wiki/02"}]}
+
+
+</script>
+<div data-testid="breadcrumb-links" id="js-vue-page-breadcrumbs-wrapper">
+<div data-breadcrumbs-json="[{&quot;text&quot;:&quot;agh-courses&quot;,&quot;href&quot;:&quot;/agh-courses&quot;,&quot;avatarPath&quot;:null},{&quot;text&quot;:&quot;2025-2026&quot;,&quot;href&quot;:&quot;/agh-courses/25&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116520342/pobierz.png&quot;},{&quot;text&quot;:&quot;Constraint Programming&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116942143/_logo.png&quot;},{&quot;text&quot;:&quot;wiki&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116942250/guide-book_11530059.png&quot;},{&quot;text&quot;:&quot;Lab 02. Instructions&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki/02&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg&quot;}]" id="js-vue-page-breadcrumbs"></div>
+<div id="js-injected-page-breadcrumbs"></div>
+<div id="js-page-breadcrumbs-extra"></div>
+</div>
+
+
+<div id="js-work-item-feedback"></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="panel-content">
+<div class="panel-content-inner js-static-panel-inner">
+<div class="alert-wrapper alert-wrapper-top-space gl-flex gl-flex-col gl-gap-3 container-fluid container-limited">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="container-fluid container-limited project-highlight-puc">
+<main class="content gl-@container/panel gl-pb-3" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div id="js-drawer-container"></div>
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<div id="js-global-alerts"></div>
+</div>
+
+
+
+<div class="js-hand-raise-lead-modal" data-submit-path="/-/gitlab_subscriptions/hand_raise_leads" data-user="{&quot;namespace_id&quot;:2749443,&quot;user_name&quot;:&quot;Mateoswiatek&quot;,&quot;first_name&quot;:&quot;Mateusz&quot;,&quot;last_name&quot;:&quot;Świątek&quot;,&quot;company_name&quot;:&quot;&quot;}"></div>
+
+
+
+
+
+
+
+<header class="project-home-panel js-show-on-project-root gl-mt-5 empty-project">
+<div class="gl-flex gl-justify-between gl-flex-wrap gl-flex-col gl-gap-5 @sm/panel:gl-flex-row">
+<div class="home-panel-title-row gl-flex gl-items-center">
+<img srcset="/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg?width=48 1x, /uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg?width=96 2x" class="gl-avatar gl-avatar-s48 gl-self-start gl-shrink-0 gl-mr-4 !gl-rounded-base" height="48" width="48" loading="lazy" itemprop="image" alt="Lab 02. Instructions" src="/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg?width=48" />
+
+<h1 class="home-panel-title gl-heading-1 gl-flex gl-items-center gl-flex-wrap gl-gap-3 gl-break-anywhere gl-mb-0" data-testid="project-name-content" itemprop="name">
+Lab 02. Instructions
+<button class="has-tooltip gl-border-0 gl-bg-transparent gl-p-0 gl-leading-0 gl-text-inherit visibility-icon gl-inline-flex" data-container="body" data-placement="top" title="Public - The project can be accessed without any authentication." type="button" aria-label="Public - The project can be accessed without any authentication."><svg class="s16 gl-fill-icon-subtle" data-testid="earth-icon"><use href="/assets/icons-4c8dcc4ae95b72054c5ab1467cf841cbe8c4717ac179b67e7e1f80a72d92038a.svg#earth"></use></svg></button>
+
+
+</h1>
+</div>
+<div data-can-edit="false" data-can-read-project="true" data-edit-path="/agh-courses/25/cp/wiki/02/edit" data-emails-disabled="false" data-id="62672131" data-is-group="false" data-is-project-archived="false" data-is-project-empty="true" data-is-project-marked-for-deletion="false" data-notification-dropdown-items="[&quot;global&quot;,&quot;watch&quot;,&quot;participating&quot;,&quot;mention&quot;,&quot;disabled&quot;]" data-notification-help-page-path="/help/user/profile/notifications.md" data-notification-level="global" data-project-avatar="/uploads/-/system/project/avatar/62672131/creative-number-2-cartoon-charactor_853066-3-kopia.jpg" data-project-id="62672131" data-project-name="Lab 02. Instructions" data-project-visibility-level="public" data-request-access-path="/agh-courses/25/cp/wiki/02/-/project_members/request_access" data-sign-in-path="/users/sign_in?redirect_to_referer=yes" data-star-count="0" data-starred="false" data-starrers-path="/agh-courses/25/cp/wiki/02/-/starrers" id="js-home-panel"></div>
+</div>
+
+</header>
+
+<div class="project-page-indicator js-show-on-project-root"></div>
+<div class="project-page-layout">
+<div class="project-page-layout-sidebar js-show-on-project-root gl-mt-5">
+<aside class="project-page-sidebar" data-testid="project-page-sidebar">
+<div class="project-page-sidebar-block home-panel-home-desc gl-py-4 gl-border-b gl-border-b-subtle !gl-pt-2">
+<h2 class="gl-text-base gl-font-bold gl-leading-reset gl-text-heading gl-m-0 gl-mb-1">Project information</h2>
+</div>
+
+<div class="project-page-sidebar-block gl-py-4">
+<p class="gl-font-bold gl-text-strong gl-m-0 gl-mb-1">Created on</p>
+<span>October 16, 2024</span>
+</div>
+</aside>
+
+</div>
+<div class="project-page-layout-content">
+<div class="project-show-wiki">
+<div class="container-fluid container-limited">
+<div class="md gl-mt-3 gl-mb-3 js-wiki-content">
+<h1 id="user-content-constraint-programming-basic-problems" data-sourcepos="1:1-1:40" dir="auto">Constraint Programming: Basic Problems<a href="#constraint-programming-basic-problems" aria-label="Link to heading 'Constraint Programming: Basic Problems'" data-heading-content="Constraint Programming: Basic Problems" class="anchor"></a>&#x000A;</h1>&#x000A;<p data-sourcepos="3:1-3:189" dir="auto">In this laboratory, we will solve some toy problems from the constraint programming literature. The created models will be later improved using some basic constraint programming techniques.</p>&#x000A;<p data-sourcepos="5:1-5:95" dir="auto">All files required to solve the assignments are available in the repository, so clone it first.</p>&#x000A;<p data-sourcepos="7:1-7:8" dir="auto">Protips:</p>&#x000A;<ul data-sourcepos="8:1-10:225" dir="auto">&#x000A;<li data-sourcepos="8:1-8:152">If you still have issues with MiniZinc syntax, don't panic! There is a nice cheatsheet built-in into the IDE: <code data-sourcepos="8:113-8:151">MiniZincIDE -&gt; Help -&gt; Cheat Sheet...</code>.</li>&#x000A;<li data-sourcepos="9:1-9:200">to get a row/col of a matrix, you can use <a data-sourcepos="9:45-9:116" href="https://www.minizinc.org/doc-2.6.0/en/lib-stdlib.html#index-448" rel="nofollow noreferrer noopener" target="_blank"><code data-sourcepos="9:46-9:50">row</code></a>/<a data-sourcepos="9:118-9:189" href="https://www.minizinc.org/doc-2.6.0/en/lib-stdlib.html#index-413" rel="nofollow noreferrer noopener" target="_blank"><code data-sourcepos="9:119-9:123">col</code></a> functions</li>&#x000A;<li data-sourcepos="10:1-12:0">MiniZinc supports also <a data-sourcepos="10:26-10:157" href="https://www.minizinc.org/doc-2.6.0/en/spec.html?highlight=slicing#array-slice-expressions" rel="nofollow noreferrer noopener" target="_blank">array slicing (ala Python numpy arrays)</a>, so you can easily get any sub-array of a given array. So much wow.</li>&#x000A;</ul>&#x000A;<h2 id="user-content-1-n-queens" data-sourcepos="13:1-13:15" dir="auto">1. N-Queens<a href="#1-n-queens" aria-label="Link to heading '1. N-Queens'" data-heading-content="1. N-Queens" class="anchor"></a>&#x000A;</h2>&#x000A;<ul data-sourcepos="15:3-17:66" dir="auto">&#x000A;<li data-sourcepos="15:3-15:188">Definition: you have to place n queens on the chessboard of size <code data-sourcepos="15:70-15:72">n</code>x<code data-sourcepos="15:74-15:76">n</code> in the way they won't attack each other (see: <a data-sourcepos="15:124-15:185" href="https://en.wikipedia.org/wiki/Eight_queens_puzzle" rel="nofollow noreferrer noopener" target="_blank">wikipedia</a>).</li>&#x000A;<li data-sourcepos="16:3-18:0">Assignment:&#x000A;<ul data-sourcepos="17:5-17:66">&#x000A;<li data-sourcepos="17:5-17:66">Fill in the missing code in the corresponding minizinc file.</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>&#x000A;<h2 id="user-content-2-n-queens--global-constraints" data-sourcepos="19:1-19:36" dir="auto">2. N-Queens + Global Constraints<a href="#2-n-queens--global-constraints" aria-label="Link to heading '2. N-Queens + Global Constraints'" data-heading-content="2. N-Queens + Global Constraints" class="anchor"></a>&#x000A;</h2>&#x000A;<p data-sourcepos="21:1-21:193" dir="auto">One of the simplest (and also the best) methods to write a good model is to make use of the global constraints. The global constraints are different from the normal constraints in two aspects:</p>&#x000A;<ul data-sourcepos="23:3-24:153" dir="auto">&#x000A;<li data-sourcepos="23:3-23:63">they may constraint many (more than two) variables at once;</li>&#x000A;<li data-sourcepos="24:3-25:0">they are implemented using very efficient algorithms, which may take advantage of the problem structure in a better way than many binary constraints.</li>&#x000A;</ul>&#x000A;<h3 id="user-content-connect-the-dots" data-sourcepos="26:1-26:23" dir="auto">Connect the dots…<a href="#connect-the-dots" aria-label="Link to heading 'Connect the dots…'" data-heading-content="Connect the dots…" class="anchor"></a>&#x000A;</h3>&#x000A;<ul data-sourcepos="28:3-29:138" dir="auto">&#x000A;<li data-sourcepos="28:3-28:154">The <code data-sourcepos="28:9-28:22">alldifferent</code> global constraint takes an array of variables as an argument and makes sure that every variable in the array has a different value.</li>&#x000A;<li data-sourcepos="29:3-29:138">Assignment: use the <code data-sourcepos="29:25-29:38">alldifferent</code> in the N-Queens model. There is a separate model just for that. Try to replace all the constraints!</li>&#x000A;</ul>&#x000A;<p data-sourcepos="31:1-31:292" dir="auto">To use a global constraint first, you've to find it in <a data-sourcepos="31:56-31:145" href="https://www.minizinc.org/doc-latest/en/lib-globals.html" rel="nofollow noreferrer noopener" target="_blank">the global constraints' library</a>. Then you've to import in the model, e.g., to use the  <code data-sourcepos="31:202-31:213">cumulative</code> constraint, you've to add the <code data-sourcepos="31:245-31:271">include "cumulative.mzn";</code> line to the model.</p>&#x000A;<h2 id="user-content-3-graph-coloring" data-sourcepos="33:1-33:21" dir="auto">3. Graph Coloring<a href="#3-graph-coloring" aria-label="Link to heading '3. Graph Coloring'" data-heading-content="3. Graph Coloring" class="anchor"></a>&#x000A;</h2>&#x000A;<ul data-sourcepos="35:3-37:66" dir="auto">&#x000A;<li data-sourcepos="35:3-35:440">Definition: assign colors to the vertices in a graph in the way that no adjacent vertices have the same color. In the case of the planar graph, you will require only four colors (why? there is a very famous <a data-sourcepos="35:212-35:280" href="http://en.wikipedia.org/wiki/Four_color_theorem" rel="nofollow noreferrer noopener" target="_blank">proof of this fact</a>. Otherwise, you may need even as many colors as there are vertices. More on the <a data-sourcepos="35:362-35:439" href="http://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring" rel="nofollow noreferrer noopener" target="_blank">wikipedia page</a>.</li>&#x000A;<li data-sourcepos="36:3-38:0">Assignment:&#x000A;<ul data-sourcepos="37:5-37:66">&#x000A;<li data-sourcepos="37:5-37:66">Fill in the missing code in the corresponding minizinc file.</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>&#x000A;<h2 id="user-content-4-sudoku" data-sourcepos="39:1-39:13" dir="auto">4. Sudoku<a href="#4-sudoku" aria-label="Link to heading '4. Sudoku'" data-heading-content="4. Sudoku" class="anchor"></a>&#x000A;</h2>&#x000A;<ul data-sourcepos="41:3-43:62" dir="auto">&#x000A;<li data-sourcepos="41:3-41:97">Definition: implement a sudoku solver (see: <a data-sourcepos="41:49-41:96" href="http://en.wikipedia.org/wiki/Sudoku" rel="nofollow noreferrer noopener" target="_blank">Wikipedia</a>)</li>&#x000A;<li data-sourcepos="42:3-45:0">Assignment:&#x000A;<ul data-sourcepos="43:5-43:62">&#x000A;<li data-sourcepos="43:5-43:62">Fill in missing code in the corresponding minizinc file.</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>&#x000A;<h2 id="user-content-5-magic-sequence" data-sourcepos="46:1-46:21" dir="auto">5. Magic Sequence<a href="#5-magic-sequence" aria-label="Link to heading '5. Magic Sequence'" data-heading-content="5. Magic Sequence" class="anchor"></a>&#x000A;</h2>&#x000A;<ul data-sourcepos="48:3-50:66" dir="auto">&#x000A;<li data-sourcepos="48:3-48:334">Definition: a sequence <code data-sourcepos="48:28-48:46">x0, x1, x2,.., xN</code> is called magic when (for every <code data-sourcepos="48:80-48:82">i</code>) <code data-sourcepos="48:85-48:88">xi</code> is equal to the number of <code data-sourcepos="48:116-48:118">i</code> occurrences in the sequence. An example of the magic sequence with 5 elements is <code data-sourcepos="48:201-48:215">2, 1, 2, 0, 0</code> --- at <code data-sourcepos="48:224-48:226">0</code> index you can see how many <code data-sourcepos="48:255-48:257">0</code> occur in the sequence, at index <code data-sourcepos="48:291-48:293">1</code> how many <code data-sourcepos="48:304-48:306">1</code> occur in the sequence, etc.</li>&#x000A;<li data-sourcepos="49:3-50:66">Assignment:&#x000A;<ul data-sourcepos="50:5-50:66">&#x000A;<li data-sourcepos="50:5-50:66">Fill in the missing code in the corresponding minizinc file.</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</main>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="js-dynamic-panel paneled-view contextual-panel gl-@container/panel !gl-absolute gl-shadow-lg @xl/content-panels:gl-w-1/2 @xl/content-panels:gl-shadow-none @xl/content-panels:!gl-relative" id="contextual-panel-portal"></div>
+</div>
+</div>
+
+</div>
+
+
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="vY0SCTzwddd5+SXKqmLQtQ==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+

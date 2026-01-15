@@ -1,0 +1,334 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="gl-system ui-neutral with-top-bar with-header application-chrome page-with-panels with-gl-container-queries " lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>agh-courses / 2025-2026 / Constraint Programming / wiki / Wiki 06. Beyond CP Solvers · GitLab</title>
+<script nonce="88jfNU+K2reWYPGHqHbhbg==">
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https://gitlab.com/assets/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=100;gon.asset_host=null;gon.webpack_public_path="/assets/webpack/";gon.relative_url_root="";gon.user_color_mode="gl-system";gon.user_color_scheme="white";gon.markdown_surround_selection=null;gon.markdown_automatic_lists=null;gon.markdown_maintain_indentation=null;gon.math_rendering_limits_enabled=true;gon.allow_immediate_namespaces_deletion=true;gon.iframe_rendering_enabled=false;gon.iframe_rendering_allowlist=[];gon.sentry_dsn="https://f5573e26de8f4293b285e556c35dfd6e@new-sentry.gitlab.net/4";gon.sentry_environment="gprd";gon.sentry_clientside_traces_sample_rate=0.05;gon.recaptcha_api_server_url="https://www.recaptcha.net/recaptcha/api.js";gon.recaptcha_sitekey="6LfAERQTAAAAAL4GYSiAMGLbcLyUIBSfPrDNJgeC";gon.gitlab_url="https://gitlab.com";gon.promo_url="https://about.gitlab.com";gon.forum_url="https://forum.gitlab.com";gon.docs_url="https://docs.gitlab.com";gon.revision="3da2e793296";gon.feature_category="groups_and_projects";gon.gitlab_logo="/assets/gitlab_logo-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png";gon.secure=true;gon.sprite_icons="/assets/icons-4c8dcc4ae95b72054c5ab1467cf841cbe8c4717ac179b67e7e1f80a72d92038a.svg";gon.sprite_file_icons="/assets/file_icons/file_icons-90de312d3dbe794a19dee8aee171f184ff69ca9c9cf9fe37e8b254e84c3a1543.svg";gon.illustrations_path="/images/illustrations.svg";gon.emoji_sprites_css_path="/assets/emoji_sprites-bd26211944b9d072037ec97cb138f1a52cd03ef185cd38b8d1fcc963245199a1.css";gon.emoji_backend_version=4;gon.gridstack_css_path="/assets/lazy_bundles/gridstack-f42069e5c7b1542688660592b48f2cbd86e26b77030efd195d124dbd8fe64434.css";gon.test_env=false;gon.disable_animations=null;gon.suggested_label_colors={"#cc338b":"Magenta-pink","#dc143c":"Crimson","#c21e56":"Rose red","#cd5b45":"Dark coral","#ed9121":"Carrot orange","#eee600":"Titanium yellow","#009966":"Green-cyan","#8fbc8f":"Dark sea green","#6699cc":"Blue-gray","#e6e6fa":"Lavender","#9400d3":"Dark violet","#330066":"Deep violet","#36454f":"Charcoal grey","#808080":"Gray"};gon.first_day_of_week=0;gon.time_display_relative=true;gon.time_display_format=0;gon.ee=true;gon.jh=false;gon.dot_com=true;gon.uf_error_prefix="UF";gon.pat_prefix="glpat-";gon.keyboard_shortcuts_enabled=true;gon.diagramsnet_url="https://embed.diagrams.net";gon.features={"uiForOrganizations":false,"organizationSwitching":false,"findAndReplace":false,"removeMonitorMetrics":true,"newProjectCreationForm":false,"workItemsClientSideBoards":false,"glqlWorkItems":false,"glqlAggregation":false,"glqlTypescript":true,"paneledView":true,"archiveGroup":true,"accessibleLoadingButton":false,"allowIframesInMarkdown":false,"projectStudioEnabled":true,"advancedContextResolver":true,"duoUiNext":false,"inlineBlame":false,"issueEmailParticipants":true,"editBranchRules":true,"pageSpecificStyles":false,"directoryCodeDropdownUpdates":true,"repositoryFileTreeBrowser":false,"repositoryLockInformation":false,"useDuoContextExclusion":true,"duoWorkflowInCi":true,"aiExperimentSastFpDetection":false};gon.roadmap_epics_limit=1000;gon.subscriptions_url="https://customers.gitlab.com";gon.subscriptions_legacy_sign_in_url="https://customers.gitlab.com/customers/sign_in?legacy=true";gon.billing_accounts_url="https://customers.gitlab.com/billing_accounts";gon.payment_form_url="https://customers.gitlab.com/payment_forms/cc_validation";gon.payment_validation_form_id="payment_method_validation";gon.licensed_features={"remoteDevelopment":true};
+//]]>
+</script>
+
+<script nonce="88jfNU+K2reWYPGHqHbhbg==">
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-7ca28e27e17da6aea3531cb027b5a4bc6fb6473f426384604c0bf9d7c473d2af.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_dark-9b84093284ebe801f10109cb0b70afa7b077591132a34aedcbeaf201c7e6a0aa.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/page_bundles/project-84c702fec0d46898f3752e2d11cffd1198f91161651f5a64ba96d3320173c207.css" /><link rel="stylesheet" href="/assets/page_bundles/tree-87852cf755928d514a7c18c7bc442022c92b8887a274746dadf9ab0f18417de8.css" /><link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css" /><link rel="stylesheet" href="/assets/page_bundles/work_items-9f34e9e1785e95144a97edb25299b8dd0d2e641f7efb2d8b7bea3717104ed8f2.css" /><link rel="stylesheet" href="/assets/page_bundles/notes_shared-8f7a9513332533cc4a53b3be3d16e69570e82bc87b3f8913578eaeb0dce57e21.css" />
+<link rel="stylesheet" href="/assets/tailwind_cqs-44a612af8fc718b6aafe54e88acfeaf7adf1fb00ba67321833a12b9ccb7bb9e5.css" />
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-9669e20d2bac0337d55977e9ba6cf7540fcbb9d11ec33b69e51bae1d72e40db3.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/highlight/themes/dark-bbc2bf181230ba191d2fa46a36972725cc81b4bd9e92b8573d3b1f88f6382336.css" media="(prefers-color-scheme: dark)" />
+
+<script src="/assets/webpack/runtime.1956d2aa.bundle.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/main.8054de5e.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/tracker.85adcc5f.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/analytics.1f5b93d6.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script nonce="88jfNU+K2reWYPGHqHbhbg==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplowprd.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true};
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-7","data":{"environment":"production","source":"gitlab-rails","correlation_id":"9a7dea8b7342bf4c-ATL","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":116942250,"ultimate_parent_namespace_id":2749443,"project_id":52571274,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","context_generated_at":"2025-12-02T21:28:49.829Z"}};
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace116942250/project52571274";
+gl.maskedDefaultReferrerUrl = null;
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = ["ai_question_category","perform_completion_worker","process_gitlab_duo_question","agent_platform_session_created","agent_platform_session_dropped","agent_platform_session_finished","agent_platform_session_resumed","agent_platform_session_started","agent_platform_session_stopped","ai_response_time","ci_repository_xray_artifact_created","cleanup_stuck_agent_platform_session","click_purchase_seats_button_group_duo_pro_home_page","code_suggestion_accepted_in_ide","code_suggestion_rejected_in_ide","code_suggestion_shown_in_ide","code_suggestions_connection_details_rate_limit_exceeded","code_suggestions_direct_access_rate_limit_exceeded","code_suggestions_rate_limit_exceeded","create_ai_catalog_item","create_ai_catalog_item_consumer","create_ai_self_hosted_model","default_answer","delete_ai_catalog_item","delete_ai_catalog_item_consumer","delete_ai_self_hosted_model","detected_high_comment_temperature","detected_repeated_high_comment_temperature","encounter_duo_code_review_error_during_review","error_answer","excluded_files_from_duo_code_review","execute_llm_method","find_no_issues_duo_code_review_after_review","find_nothing_to_review_duo_code_review_on_mr","finish_duo_workflow_execution","finish_mcp_tool_call","forced_high_temperature_commenting","i_quickactions_q","include_repository_xray_data_into_code_generation_prompt","mention_gitlabduo_in_mr_comment","post_comment_duo_code_review_on_diff","process_gitlab_duo_slash_command","react_thumbs_down_on_duo_code_review_comment","react_thumbs_up_on_duo_code_review_comment","request_ask_help","request_duo_chat_response","request_review_duo_code_review_on_mr_by_author","request_review_duo_code_review_on_mr_by_non_author","requested_comment_temperature","retry_duo_workflow_execution","start_duo_workflow_execution","start_mcp_tool_call","submit_gitlab_duo_question","tokens_per_embedding","tokens_per_user_request_prompt","tokens_per_user_request_response","trigger_ai_catalog_item","troubleshoot_job","update_ai_catalog_item","update_ai_catalog_item_consumer","update_ai_self_hosted_model","update_model_selection_feature","update_self_hosted_ai_feature_to_vendored_model","view_ai_catalog_item","view_ai_catalog_item_index"];
+gl.onlySendDuoEvents = false;
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application-afb0e2d0b4f4d5f4a03914b5e3c2befe3d28df33dbe0dca0abca2c463824ffdd.css" as="style" type="text/css" nonce="DXEH2Y0xr9tAMVH4sUE+bw==">
+<link rel="preload" href="/assets/highlight/themes/white-9669e20d2bac0337d55977e9ba6cf7540fcbb9d11ec33b69e51bae1d72e40db3.css" as="style" type="text/css" nonce="DXEH2Y0xr9tAMVH4sUE+bw==">
+<link crossorigin="" href="https://snowplowprd.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-9892dc17af892e03de41625c0ee325117a3b8ee4ba6005f3a3eac68510030aed.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-f96f17332d67b21ada2dfba5f0c0e1d5801eab99330472057bf18edd93d4ccf7.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
+<link rel="preload" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" as="style" type="text/css" nonce="DXEH2Y0xr9tAMVH4sUE+bw==">
+
+
+
+<script src="/assets/webpack/sentry.0193c2ee.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.9b1bdddd.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/super_sidebar.5ceaee1d.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-3888eb97.2fd41a56.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/dbe6a049.1fc40ea6.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.edit-pages.projects.sni-42df7d4c.cf2fed02.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/467359d4.634b8aee.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/ea7ea8c3.58ef5d7f.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show-pages.projects.tre-c684fcf6.e157f467.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/499d8988.4aa04d40.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.get_started.show-pages.projects.show-pages.projects.tree.show.92e86488.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.commits.show-pages.projects.show-pages.projects.tree.show.7f4c52b7.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.9b22b1ad.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.e47324af.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/commons-pages.groups.show-pages.projects.home_panel-pages.projects.show.f1e3dbe2.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+<script src="/assets/webpack/pages.projects.show.4f3b4737.chunk.js" defer="defer" nonce="88jfNU+K2reWYPGHqHbhbg=="></script>
+
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="agh-courses / 2025-2026 / Constraint Programming / wiki / Wiki 06. Beyond CP Solvers · GitLab" property="og:title">
+<meta content="GitLab.com" property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/52571274/six.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/agh-courses/25/cp/wiki/wiki-06" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="agh-courses / 2025-2026 / Constraint Programming / wiki / Wiki 06. Beyond CP Solvers · GitLab" property="twitter:title">
+<meta content="GitLab.com" property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/52571274/six.jpg" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="IlQhkLKjg_Ck7MSU8E8J7LPS8lRm6RNbL9K31hNucrLj7G5srwtj68m8SJlforTM0GM4csMpohvVBSYmssuRYw" />
+<meta name="csp-nonce" content="88jfNU+K2reWYPGHqHbhbg==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+<link rel="alternate" type="application/atom+xml" title="Wiki 06. Beyond CP Solvers activity" href="/agh-courses/25/cp/wiki/wiki-06.atom" />
+
+
+
+
+<meta content="GitLab.com" name="description">
+<meta content="#ececef" name="theme-color">
+</head>
+
+<body class="tab-width-8 gl-browser-firefox gl-platform-linux " data-group="wiki" data-group-full-path="agh-courses/25/cp/wiki" data-namespace-id="116942250" data-page="projects:show" data-page-type-id="wiki-06" data-project="wiki-06" data-project-full-path="agh-courses/25/cp/wiki/wiki-06" data-project-id="52571274" data-project-studio-available="true" data-project-studio-enabled="true">
+<div id="js-tooltips-container"></div>
+
+<script nonce="88jfNU+K2reWYPGHqHbhbg==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isFirefox":true,"isLinux":true};
+
+
+//]]>
+</script>
+
+
+<header class="super-topbar js-super-topbar"></header>
+<div class="layout-page js-page-layout page-with-super-sidebar">
+<script nonce="88jfNU+K2reWYPGHqHbhbg==">
+//<![CDATA[
+const outer = document.createElement('div');
+outer.style.visibility = 'hidden';
+outer.style.overflow = 'scroll';
+document.body.appendChild(outer);
+const inner = document.createElement('div');
+outer.appendChild(inner);
+const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+outer.parentNode.removeChild(outer);
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+
+//]]>
+</script><aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{}" data-force-desktop-expanded-sidebar="" data-is-saas="true" data-root-path="/" data-sidebar="{&quot;whats_new_most_recent_release_items_count&quot;:3,&quot;whats_new_version_digest&quot;:&quot;2438dfd35ebf005347cec38782a7966a461059d083e95f51359ef349b17bdde9&quot;,&quot;whats_new_read_articles&quot;:[],&quot;whats_new_mark_as_read_path&quot;:&quot;/-/whats_new/mark_as_read&quot;,&quot;is_logged_in&quot;:false,&quot;compare_plans_url&quot;:&quot;https://about.gitlab.com/pricing&quot;,&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Explore&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;}],&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;Wiki 06. Beyond CP Solvers&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/52571274/six.jpg&quot;,&quot;entity_id&quot;:52571274,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06&quot;,&quot;link_classes&quot;:&quot;shortcuts-project&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;manage_menu&quot;,&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/activity&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/activity&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/project_members&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/labels&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;plan_menu&quot;,&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/issues&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Issues&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/issues&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;pill_count_field&quot;:&quot;openIssuesCount&quot;,&quot;pill_count_dynamic&quot;:false,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/boards&quot;,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/milestones&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/wikis/home&quot;,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;deploy_menu&quot;,&quot;title&quot;:&quot;Deploy&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/ml/models&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;model_registry&quot;,&quot;title&quot;:&quot;Model registry&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/ml/models&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;monitor_menu&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/issues/service_desk&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;link&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/issues/service_desk&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false}],&quot;current_context_header&quot;:&quot;Project&quot;,&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;docs_path&quot;:&quot;/help/docs&quot;,&quot;display_whats_new&quot;:true,&quot;show_version_check&quot;:null,&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;settings_path&quot;:&quot;/search/settings&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:116942250,&quot;name&quot;:&quot;wiki&quot;,&quot;full_name&quot;:&quot;agh-courses / 2025-2026 / Constraint Programming / wiki&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/agh-courses/25/cp/wiki/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/agh-courses/25/cp/wiki/-/merge_requests&quot;},&quot;project&quot;:{&quot;id&quot;:52571274,&quot;name&quot;:&quot;Wiki 06. Beyond CP Solvers&quot;},&quot;project_metadata&quot;:{&quot;issues_path&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06/-/issues&quot;},&quot;code_search&quot;:true,&quot;scope&quot;:null,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/explore/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Groups&quot;,&quot;href&quot;:&quot;/explore/groups&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-groups&quot;},{&quot;title&quot;:&quot;Projects&quot;,&quot;href&quot;:&quot;/explore/projects/starred&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-projects&quot;}],&quot;terms&quot;:&quot;/-/users/terms&quot;,&quot;sign_in_visible&quot;:&quot;true&quot;,&quot;allow_signup&quot;:&quot;true&quot;,&quot;new_user_registration_path&quot;:&quot;/users/sign_up&quot;,&quot;sign_in_path&quot;:&quot;/users/sign_in?redirect_to_referer=yes&quot;}"></aside>
+
+
+<div class="panels-container gl-flex gl-gap-3">
+<div class="content-panels gl-flex-1 gl-w-full gl-flex gl-gap-3 gl-relative js-content-panels gl-@container/content-panels">
+<div class="js-static-panel static-panel content-wrapper gl-relative paneled-view gl-flex-1 gl-overflow-y-auto gl-bg-default" id="static-panel-portal">
+<div class="panel-header">
+<div class="broadcast-wrapper">
+
+
+
+</div>
+<div class="top-bar-fixed container-fluid gl-rounded-t-lg gl-sticky gl-top-0 gl-left-0 gl-mx-0 gl-w-full" data-testid="top-bar">
+<div class="top-bar-container gl-flex gl-items-center gl-gap-2">
+<div class="gl-grow gl-basis-0 gl-flex gl-items-center gl-justify-start gl-gap-3">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"agh-courses","item":"https://gitlab.com/agh-courses"},{"@type":"ListItem","position":2,"name":"2025-2026","item":"https://gitlab.com/agh-courses/25"},{"@type":"ListItem","position":3,"name":"Constraint Programming","item":"https://gitlab.com/agh-courses/25/cp"},{"@type":"ListItem","position":4,"name":"wiki","item":"https://gitlab.com/agh-courses/25/cp/wiki"},{"@type":"ListItem","position":5,"name":"Wiki 06. Beyond CP Solvers","item":"https://gitlab.com/agh-courses/25/cp/wiki/wiki-06"}]}
+
+
+</script>
+<div data-testid="breadcrumb-links" id="js-vue-page-breadcrumbs-wrapper">
+<div data-breadcrumbs-json="[{&quot;text&quot;:&quot;agh-courses&quot;,&quot;href&quot;:&quot;/agh-courses&quot;,&quot;avatarPath&quot;:null},{&quot;text&quot;:&quot;2025-2026&quot;,&quot;href&quot;:&quot;/agh-courses/25&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116520342/pobierz.png&quot;},{&quot;text&quot;:&quot;Constraint Programming&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116942143/_logo.png&quot;},{&quot;text&quot;:&quot;wiki&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/116942250/guide-book_11530059.png&quot;},{&quot;text&quot;:&quot;Wiki 06. Beyond CP Solvers&quot;,&quot;href&quot;:&quot;/agh-courses/25/cp/wiki/wiki-06&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/project/avatar/52571274/six.jpg&quot;}]" id="js-vue-page-breadcrumbs"></div>
+<div id="js-injected-page-breadcrumbs"></div>
+<div id="js-page-breadcrumbs-extra"></div>
+</div>
+
+
+<div id="js-work-item-feedback"></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="panel-content">
+<div class="panel-content-inner js-static-panel-inner">
+<div class="alert-wrapper alert-wrapper-top-space gl-flex gl-flex-col gl-gap-3 container-fluid container-limited">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="container-fluid container-limited project-highlight-puc">
+<main class="content gl-@container/panel gl-pb-3" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div id="js-drawer-container"></div>
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<div id="js-global-alerts"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<header class="project-home-panel js-show-on-project-root gl-mt-5 empty-project">
+<div class="gl-flex gl-justify-between gl-flex-wrap gl-flex-col gl-gap-5 @sm/panel:gl-flex-row">
+<div class="home-panel-title-row gl-flex gl-items-center">
+<img srcset="/uploads/-/system/project/avatar/52571274/six.jpg?width=48 1x, /uploads/-/system/project/avatar/52571274/six.jpg?width=96 2x" class="gl-avatar gl-avatar-s48 gl-self-start gl-shrink-0 gl-mr-4 !gl-rounded-base" height="48" width="48" loading="lazy" itemprop="image" alt="Wiki 06. Beyond CP Solvers" src="/uploads/-/system/project/avatar/52571274/six.jpg?width=48" />
+
+<h1 class="home-panel-title gl-heading-1 gl-flex gl-items-center gl-flex-wrap gl-gap-3 gl-break-anywhere gl-mb-0" data-testid="project-name-content" itemprop="name">
+Wiki 06. Beyond CP Solvers
+<button class="has-tooltip gl-border-0 gl-bg-transparent gl-p-0 gl-leading-0 gl-text-inherit visibility-icon gl-inline-flex" data-container="body" data-placement="top" title="Public - The project can be accessed without any authentication." type="button" aria-label="Public - The project can be accessed without any authentication."><svg class="s16 gl-fill-icon-subtle" data-testid="earth-icon"><use href="/assets/icons-4c8dcc4ae95b72054c5ab1467cf841cbe8c4717ac179b67e7e1f80a72d92038a.svg#earth"></use></svg></button>
+
+
+</h1>
+</div>
+<div data-can-read-project="true" data-id="52571274" data-is-group="false" data-is-project-archived="false" data-is-project-empty="true" data-is-project-marked-for-deletion="false" data-project-avatar="/uploads/-/system/project/avatar/52571274/six.jpg" data-project-id="52571274" data-project-name="Wiki 06. Beyond CP Solvers" data-project-visibility-level="public" data-sign-in-path="/users/sign_in?redirect_to_referer=yes" data-star-count="0" data-starred="false" data-starrers-path="/agh-courses/25/cp/wiki/wiki-06/-/starrers" id="js-home-panel"></div>
+</div>
+
+</header>
+
+<div class="project-page-indicator js-show-on-project-root"></div>
+<div class="project-page-layout">
+<div class="project-page-layout-sidebar js-show-on-project-root gl-mt-5">
+<aside class="project-page-sidebar" data-testid="project-page-sidebar">
+<div class="project-page-sidebar-block home-panel-home-desc gl-py-4 gl-border-b gl-border-b-subtle !gl-pt-2">
+<h2 class="gl-text-base gl-font-bold gl-leading-reset gl-text-heading gl-m-0 gl-mb-1">Project information</h2>
+</div>
+
+<div class="project-page-sidebar-block gl-py-4">
+<p class="gl-font-bold gl-text-strong gl-m-0 gl-mb-1">Created on</p>
+<span>November 28, 2023</span>
+</div>
+</aside>
+
+</div>
+<div class="project-page-layout-content">
+<div class="project-show-wiki">
+<div class="container-fluid container-limited">
+<div class="md gl-mt-3 gl-mb-3 js-wiki-content">
+<h1 id="user-content-beyond-cp-solvers" data-sourcepos="1:1-1:19" dir="auto">Beyond CP Solvers<a href="#beyond-cp-solvers" aria-label="Link to heading 'Beyond CP Solvers'" data-heading-content="Beyond CP Solvers" class="anchor"></a>&#x000A;</h1>&#x000A;<ul class="section-nav"><li>&#x000A;<a href="#beyond-cp-solvers">Beyond CP Solvers</a><ul>&#x000A;<li><a href="#1-traveling-salesman-problem">1. Traveling Salesman Problem</a></li>&#x000A;<li>&#x000A;<a href="#2-naive-constraint-programming-model">2. Naive Constraint Programming Model</a><ul><li><a href="#21-assignment">2.1. Assignment:</a></li></ul>&#x000A;</li>&#x000A;<li>&#x000A;<a href="#3-flow-network-model">3. Flow Network Model</a><ul>&#x000A;<li><a href="#31-flow-preservation">3.1. Flow Preservation</a></li>&#x000A;<li><a href="#32-maintaining-cycle-length">3.2 Maintaining Cycle Length</a></li>&#x000A;<li><a href="#33-assignment">3.3. Assignment</a></li>&#x000A;<li><a href="#34-words-of-wisdom">3.4. Words of Wisdom</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;<li>&#x000A;<a href="#4-large-neighborhood-search">4. Large Neighborhood Search</a><ul>&#x000A;<li><a href="#41-assignment">4.1. Assignment</a></li>&#x000A;<li><a href="#42-words-of-wisdom">4.2. Words of Wisdom</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>&#x000A;</li></ul>&#x000A;<p data-sourcepos="5:1-5:304" dir="auto">Classical Constraint Programming (and SAT) solvers are magnificent achievements of modern computer science. They (reasonably) quickly find solutions satisfying the given constraints, however, when it comes to optimization they still tend to be slower than two other commonly used optimization techniques:</p>&#x000A;<ul data-sourcepos="7:1-10:473" dir="auto">&#x000A;<li data-sourcepos="7:1-9:52">&#x000A;<a data-sourcepos="7:3-7:62" href="https://en.wikipedia.org/wiki/Metaheuristic" rel="nofollow noreferrer noopener" target="_blank">metaheuristic</a> methods (e.g. Local Search, Genetic Algorithms), that work by iteratively improving the initial solution. Those algorithms often give excellent results, but have two major disadvantages:&#x000A;<ul data-sourcepos="8:3-9:52">&#x000A;<li data-sourcepos="8:3-8:51">there is no standard way to model the problems;</li>&#x000A;<li data-sourcepos="9:3-9:52">they can't prove they found an optimal solution.</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="10:1-10:473">&#x000A;<a data-sourcepos="10:3-10:74" href="https://en.wikipedia.org/wiki/Integer_programming" rel="nofollow noreferrer noopener" target="_blank">integer programming</a> describes problems in terms of mathematical equations. Algorithms belonging to this family are incredibly efficient, but there is no free lunch and they also come with a price: mathematical models typically put some requirements on the constraints, e.g., the constraints have to be linear. The problem is that many real problems are non–linear and it's at least not obvious how to linearize them.</li>&#x000A;</ul>&#x000A;<p data-sourcepos="12:1-12:89" dir="auto">Today we will learn, how one can use those alternative techniques combined with MiniZinc.</p>&#x000A;<h2 id="user-content-1-traveling-salesman-problem" data-sourcepos="14:1-14:32" dir="auto">1. Traveling Salesman Problem<a href="#1-traveling-salesman-problem" aria-label="Link to heading '1. Traveling Salesman Problem'" data-heading-content="1. Traveling Salesman Problem" class="anchor"></a>&#x000A;</h2>&#x000A;<p data-sourcepos="16:1-16:347" dir="auto">We use as the benchmark the <a data-sourcepos="16:29-16:123" href="https://en.wikipedia.org/wiki/Travelling_salesman_problem" rel="nofollow noreferrer noopener" target="_blank">traveling salesman problem (TSP)</a> which is a surprisingly hard problem. An example of this problem would be to find the shortest path connecting all the pubs in London. The map below shows part of the solution for this particularly useful query of research:</p>&#x000A;<p data-sourcepos="18:1-18:72" dir="auto"><a class="no-attachment-icon" href="/agh-courses/25/cp/wiki/wiki-06/-/wikis/uploads/567cd7635f4f57538972cb9057d15dca/london_line.png" target="_blank" rel="noopener noreferrer" data-canonical-src="uploads/567cd7635f4f57538972cb9057d15dca/london_line.png"><img data-sourcepos="18:1-18:72" alt="london_line" decoding="async" class="lazy" data-src="/agh-courses/25/cp/wiki/wiki-06/-/wikis/uploads/567cd7635f4f57538972cb9057d15dca/london_line.png" data-canonical-src="uploads/567cd7635f4f57538972cb9057d15dca/london_line.png"></a></p>&#x000A;<p data-sourcepos="20:1-20:220" dir="auto">In the repository <code data-sourcepos="20:19-20:24">data</code> directory you will find several small TSP instances consisting just of a distance matrix (a fully connected graph with all the nodes in the problem where weights are the corresponding distances).</p>&#x000A;<h2 id="user-content-2-naive-constraint-programming-model" data-sourcepos="22:1-22:40" dir="auto">2. Naive Constraint Programming Model<a href="#2-naive-constraint-programming-model" aria-label="Link to heading '2. Naive Constraint Programming Model'" data-heading-content="2. Naive Constraint Programming Model" class="anchor"></a>&#x000A;</h2>&#x000A;<p data-sourcepos="24:1-24:63" dir="auto">The naive model of the <code data-sourcepos="24:24-24:26">n</code>–city TSP problem works as follows:</p>&#x000A;<ol data-sourcepos="26:1-29:149" dir="auto">&#x000A;<li data-sourcepos="26:1-26:178">route is represented as <code data-sourcepos="26:28-26:30">n</code>–element array <code data-sourcepos="26:48-26:54">route</code>, where <code data-sourcepos="26:63-26:72">route[i]</code> is the index of the city visited as <code data-sourcepos="26:110-26:112">i</code>–th, e.g. <code data-sourcepos="26:125-26:135">[2,4,3,1]</code> is a route <code data-sourcepos="26:148-26:150">2</code> -&gt; <code data-sourcepos="26:155-26:157">4</code> -&gt; <code data-sourcepos="26:162-26:164">3</code> -&gt; <code data-sourcepos="26:169-26:171">1</code> -&gt; <code data-sourcepos="26:176-26:178">2</code>&#x000A;</li>&#x000A;<li data-sourcepos="27:1-27:49">every city should occur only once in the route</li>&#x000A;<li data-sourcepos="28:1-28:68">one should statically break symmetry by fixing the starting point</li>&#x000A;<li data-sourcepos="29:1-30:0">the objective is to minimize the total distance <code data-sourcepos="29:52-29:149">distance[route[1], route[2]] + distance[route[2], route[3]] + ... + distance[route[n], route[1]]</code>&#x000A;</li>&#x000A;</ol>&#x000A;<h3 id="user-content-21-assignment" data-sourcepos="31:1-31:20" dir="auto">2.1. Assignment:<a href="#21-assignment" aria-label="Link to heading '2.1. Assignment:'" data-heading-content="2.1. Assignment:" class="anchor"></a>&#x000A;</h3>&#x000A;<ol data-sourcepos="33:1-34:91" dir="auto">&#x000A;<li data-sourcepos="33:1-33:52">Create a naive model in the <code data-sourcepos="33:32-33:46">tsp_naive.mzn</code> file.</li>&#x000A;<li data-sourcepos="34:1-35:0">Try to run it on several data instances using <code data-sourcepos="34:50-34:57">gecode</code> solver. does it handle them well?</li>&#x000A;</ol>&#x000A;<h2 id="user-content-3-flow-network-model" data-sourcepos="36:1-36:24" dir="auto">3. Flow Network Model<a href="#3-flow-network-model" aria-label="Link to heading '3. Flow Network Model'" data-heading-content="3. Flow Network Model" class="anchor"></a>&#x000A;</h2>&#x000A;<p data-sourcepos="38:1-38:181" dir="auto">The more practical model would be to represent the TSP problem as a <a data-sourcepos="38:69-38:126" href="https://en.wikipedia.org/wiki/Flow_network" rel="nofollow noreferrer noopener" target="_blank">flow network</a>. It's a bit more complicated but is certainly smarter.</p>&#x000A;<h3 id="user-content-31-flow-preservation" data-sourcepos="40:1-40:26" dir="auto">3.1. Flow Preservation<a href="#31-flow-preservation" aria-label="Link to heading '3.1. Flow Preservation'" data-heading-content="3.1. Flow Preservation" class="anchor"></a>&#x000A;</h3>&#x000A;<p data-sourcepos="42:1-42:241" dir="auto">So... the flow network is a directed graph over all the cities in the problem, where edges can be either active or inactive. We will represent it with a two–dimensional array of boolean variables <code data-sourcepos="42:199-42:204">flow</code>. There are two constraints involved:</p>&#x000A;<ol data-sourcepos="44:1-45:61" dir="auto">&#x000A;<li data-sourcepos="44:1-44:65">every city has to be a source (start) of a single active edge.</li>&#x000A;<li data-sourcepos="45:1-45:61">every city has to be a sink (end) of a single active edge.</li>&#x000A;</ol>&#x000A;<p data-sourcepos="47:1-47:421" dir="auto">This way every city will be just a transit point in the route... You could now try to put those in the <code data-sourcepos="47:104-47:117">tsp_flow.mzn</code> see how it works. The length of the route is just the length of all the active edges... You should notice something strange — instead of a single hamiltonian cycle, we get several. Apparently, our flow graph is preserving the flow, but there is no rule forcing it to make a single cycle <gl-emoji title="disappointed face" data-name="disappointed" data-unicode-version="6.0">😞</gl-emoji></p>&#x000A;<h3 id="user-content-32-maintaining-cycle-length" data-sourcepos="49:1-49:32" dir="auto">3.2 Maintaining Cycle Length<a href="#32-maintaining-cycle-length" aria-label="Link to heading '3.2 Maintaining Cycle Length'" data-heading-content="3.2 Maintaining Cycle Length" class="anchor"></a>&#x000A;</h3>&#x000A;<p data-sourcepos="51:1-51:309" dir="auto">To fix the problem with the number of cycles, we will force every cycle to have a length equal <code data-sourcepos="51:96-51:98">n</code> — effectively making it a hamiltonian cycle. We will add the second two–dimensional array <code data-sourcepos="51:194-51:208">visit_counter</code> that for every edge will store info, how many nodes have been visited before reaching this edge, so:</p>&#x000A;<ol data-sourcepos="53:1-58:63" dir="auto">&#x000A;<li data-sourcepos="53:1-53:80">for every edge starting in the first node, we will assign <code data-sourcepos="53:62-53:80">visit_counter = 0</code>&#x000A;</li>&#x000A;<li data-sourcepos="54:1-55:163">for every inactive edge (<code data-sourcepos="54:29-54:42">flow = false</code>) the visit counter also should be equal <code data-sourcepos="54:84-54:86">0</code>, as we never reach this edge.&#x000A;<ul data-sourcepos="55:4-55:163">&#x000A;<li data-sourcepos="55:4-55:163">&#x000A;<gl-emoji title="light bulb" data-name="bulb" data-unicode-version="6.0">💡</gl-emoji> to make this constraint linear you may want to consider using multiplication instead of an <code data-sourcepos="55:104-55:107">if</code>, e.g. <code data-sourcepos="55:115-55:163">visit_counter &lt;= flow * max_visit_counter_value</code>&#x000A;</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="56:1-56:167">"the sum of the visits counters for the incoming edges" into the first node should be the maximal visit counter value (open question: <em data-sourcepos="56:138-56:165">what is the maximal value?</em>).</li>&#x000A;<li data-sourcepos="57:1-59:0">for every <em data-sourcepos="57:14-57:21">normal</em> node (not the first node), "the sum of the visits counters for the outgoing edges" has to be bigger than "the sum of the visits counters for the incoming edges" exactly by <code data-sourcepos="57:195-57:197">1</code>&#x000A;<ul data-sourcepos="58:4-58:63">&#x000A;<li data-sourcepos="58:4-58:63">&#x000A;<gl-emoji title="light bulb" data-name="bulb" data-unicode-version="6.0">💡</gl-emoji> we do this summing to get rid of the inactive edges</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ol>&#x000A;<h3 id="user-content-33-assignment" data-sourcepos="60:1-60:19" dir="auto">3.3. Assignment<a href="#33-assignment" aria-label="Link to heading '3.3. Assignment'" data-heading-content="3.3. Assignment" class="anchor"></a>&#x000A;</h3>&#x000A;<ol data-sourcepos="62:1-64:78" dir="auto">&#x000A;<li data-sourcepos="62:1-62:50">Create a flow model in the <code data-sourcepos="62:31-62:44">tsp_flow.mzn</code> file.</li>&#x000A;<li data-sourcepos="63:1-63:46">First, run <code data-sourcepos="63:15-63:22">gecode</code> again using this model.</li>&#x000A;<li data-sourcepos="64:1-65:0">Then, try <code data-sourcepos="64:14-64:22">COIN-BC</code> — a built-in linear solver and compare the results :)</li>&#x000A;</ol>&#x000A;<h3 id="user-content-34-words-of-wisdom" data-sourcepos="66:1-66:24" dir="auto">3.4. Words of Wisdom<a href="#34-words-of-wisdom" aria-label="Link to heading '3.4. Words of Wisdom'" data-heading-content="3.4. Words of Wisdom" class="anchor"></a>&#x000A;</h3>&#x000A;<p data-sourcepos="68:1-68:700" dir="auto">This flow model will work only for small instances (like the ones in the <code data-sourcepos="68:74-68:79">data</code>). The number of constraints grows too quickly with the number of nodes and therefore soon stops being practical. Real TSP solvers extend this model with <em data-sourcepos="68:234-68:239">cuts</em> — instead of adding all the constraints at once, they lazily remove some solutions from the search space while solving. MiniZinc doesn't support the lazy constraints, but <a data-sourcepos="68:414-68:518" href="https://web.archive.org/web/20131216173935/https://iaindunning.com/2013/mip-callback.html" rel="nofollow noreferrer noopener" target="_blank">this webpage</a> shows how to do it in the JuMP modeling framework. The best TSP solver in the wild is <a data-sourcepos="68:606-68:666" href="https://en.wikipedia.org/wiki/Concorde_TSP_Solver" rel="nofollow noreferrer noopener" target="_blank">Concorde</a> and it operates in a similar way.</p>&#x000A;<blockquote data-sourcepos="70:1-72:97" dir="auto">&#x000A;<p data-sourcepos="70:3-70:26"><gl-emoji title="light bulb" data-name="bulb" data-unicode-version="6.0">💡</gl-emoji> <strong data-sourcepos="70:10-70:26">Did you know?</strong></p>&#x000A;<p data-sourcepos="72:3-72:97">When using global constraint <code data-sourcepos="72:32-72:40">circuit</code>, the best MIP solvers will use the <em data-sourcepos="72:77-72:82">cuts</em> automatically.</p>&#x000A;</blockquote>&#x000A;<h2 id="user-content-4-large-neighborhood-search" data-sourcepos="74:1-74:31" dir="auto">4. Large Neighborhood Search<a href="#4-large-neighborhood-search" aria-label="Link to heading '4. Large Neighborhood Search'" data-heading-content="4. Large Neighborhood Search" class="anchor"></a>&#x000A;</h2>&#x000A;<p data-sourcepos="76:1-76:390" dir="auto">There are two ways to use metauheristic methods in MiniZinc. The first one, the more obvious, is to look for a metaheuristc solver and just choose it in the MiniZincIDE (there are at least two: <a data-sourcepos="76:195-76:254" href="https://bitbucket.org/oscarlib/oscar/wiki/CBLS" rel="nofollow noreferrer noopener" target="_blank">oscar-cbls</a> and <a data-sourcepos="76:260-76:301" href="https://github.com/informarte/yuck" rel="nofollow noreferrer noopener" target="_blank">yuck</a>). We will, however, try a more generic technique called Large Neighborhood Search (LNS).</p>&#x000A;<p data-sourcepos="78:1-78:223" dir="auto">The idea behind LNS is very simple: you don't have to optimize the whole problem at once — you may optimize just a part of it and when it's done, move to another part. The diagram below presents this approach in a detail:</p>&#x000A;<div class="gl-relative markdown-code-block js-markdown-code">&#x000A;<pre data-sourcepos="80:1-90:3" data-canonical-lang="mermaid" class="code highlight js-syntax-highlight language-mermaid" v-pre="true"><code class="js-render-mermaid"><span id="LC1" class="line" lang="mermaid">graph TD;</span>&#x000A;<span id="LC2" class="line" lang="mermaid">  A[1. find an&lt;br/&gt;initial solution]--&gt;B[2. mark the solution&lt;br/&gt;as the best];</span>&#x000A;<span id="LC3" class="line" lang="mermaid">  subgraph LNS</span>&#x000A;<span id="LC4" class="line" lang="mermaid">    B--&gt;C[3. relax the&lt;br/&gt;best solution];</span>&#x000A;<span id="LC5" class="line" lang="mermaid">    C--&gt;D[4. optimize the&lt;br/&gt;relaxed solution];</span>&#x000A;<span id="LC6" class="line" lang="mermaid">    D--&gt;E{5. is it better&lt;br/&gt;than the current&lt;br/&gt;best solution?};</span>&#x000A;<span id="LC7" class="line" lang="mermaid">    E--&gt;|yes|B;</span>&#x000A;<span id="LC8" class="line" lang="mermaid">    E--&gt;|no|C;</span>&#x000A;<span id="LC9" class="line" lang="mermaid">  end</span></code></pre>&#x000A;<copy-code></copy-code><insert-code-snippet></insert-code-snippet>&#x000A;</div>&#x000A;<p data-sourcepos="92:1-92:41" dir="auto">Now we can explain the steps as follows:</p>&#x000A;<ol data-sourcepos="94:1-98:120" dir="auto">&#x000A;<li data-sourcepos="94:1-94:139">find an initial solution — we have to provide LNS with an initial solution; it doesn't have to be great — it just has to be correct.</li>&#x000A;<li data-sourcepos="95:1-95:107">mark the solution as the best — we just have to remember which solution is our current best candidate.</li>&#x000A;<li data-sourcepos="96:1-96:316">relax the best solution — here comes the fun part. As I've written above, we want to optimize only a part of the problem. Now we decide which part should be optimized in the next step. We take an existing solution and we <em data-sourcepos="96:227-96:233">erase</em> some variables, e.g. we remove assignments from the 10% randomly chosen variables!</li>&#x000A;<li data-sourcepos="97:1-97:338">optimize the relaxed solution — we take the relaxed solution as an input to our model. We <em data-sourcepos="97:96-97:100">fix</em> (like in sudoku) all the variables that already have values in the relaxed solution. In other words, our solver has only to find optimal values for the relaxed variables. We <strong data-sourcepos="97:276-97:312">optimize only part of the problem</strong> and get a new solution...</li>&#x000A;<li data-sourcepos="98:1-98:120">is it better than the current best solution? If that's the case, we move to step 2. Otherwise, we start again from 3.</li>&#x000A;</ol>&#x000A;<p data-sourcepos="100:1-100:148" dir="auto">The scheme is quite basic, but it delivers great results. You should also notice it does work with any solver, not only constraint programming ones.</p>&#x000A;<h3 id="user-content-41-assignment" data-sourcepos="102:1-102:19" dir="auto">4.1. Assignment<a href="#41-assignment" aria-label="Link to heading '4.1. Assignment'" data-heading-content="4.1. Assignment" class="anchor"></a>&#x000A;</h3>&#x000A;<ol data-sourcepos="104:1-107:292" dir="auto">&#x000A;<li data-sourcepos="104:1-104:73">Create a model to find an initial solution in the <code data-sourcepos="104:54-104:67">tsp_init.mzn</code> file.</li>&#x000A;<li data-sourcepos="105:1-105:72">Create a model to improve the solution in the <code data-sourcepos="105:50-105:66">tsp_improve.mzn</code> file.</li>&#x000A;<li data-sourcepos="106:1-108:0">Fill missing code in the <code data-sourcepos="106:29-106:40">tsp_lns.py</code> and run it!&#x000A;<ul data-sourcepos="107:5-107:292">&#x000A;<li data-sourcepos="107:5-107:292">This is the first time we do some programming in python, so be aware that you've to install the packages from the <code data-sourcepos="107:121-107:138">requirements.txt</code> (including the <a data-sourcepos="107:155-107:263" href="https://minizinc-python.readthedocs.io/en/latest/getting_started.html#installation" rel="nofollow noreferrer noopener" target="_blank"><code data-sourcepos="107:156-107:170">minizinc[dzn]</code> library</a>) before running this script.</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ol>&#x000A;<h3 id="user-content-42-words-of-wisdom" data-sourcepos="109:1-109:24" dir="auto">4.2. Words of Wisdom<a href="#42-words-of-wisdom" aria-label="Link to heading '4.2. Words of Wisdom'" data-heading-content="4.2. Words of Wisdom" class="anchor"></a>&#x000A;</h3>&#x000A;<p data-sourcepos="111:1-111:209" dir="auto">The Large Neighborhood is well supported by many <a data-sourcepos="111:50-111:111" href="https://choco-solver.org/docs/solving/lns/" rel="nofollow noreferrer noopener" target="_blank">existing solvers</a> and if you've used them directly (without MiniZinc) you wouldn't require external python scripts.</p>&#x000A;<p data-sourcepos="113:1-113:45" dir="auto">There are many ways to improve the basic LNS:</p>&#x000A;<ol data-sourcepos="114:1-115:254" dir="auto">&#x000A;<li data-sourcepos="114:1-114:121">The relaxation could be smarter, i.e., be problem-specific or <a data-sourcepos="114:66-114:121" href="https://arxiv.org/abs/2107.10201" rel="nofollow noreferrer noopener" target="_blank">use machine learning</a>&#x000A;</li>&#x000A;<li data-sourcepos="115:1-116:0">The relaxation could adapt to the process, i.e., if one can't improve the solution by relaxing just 10% of variables, maybe 15% could help? :)  It's called Adaptive Large Neighborhood Search. In fact, the <code data-sourcepos="115:209-115:220">tsp_lns.py</code> implements this approach naively.</li>&#x000A;</ol>&#x000A;<blockquote data-sourcepos="117:1-120:269" dir="auto">&#x000A;<p data-sourcepos="117:3-117:26"><gl-emoji title="light bulb" data-name="bulb" data-unicode-version="6.0">💡</gl-emoji> <strong data-sourcepos="117:10-117:26">Did you know?</strong></p>&#x000A;<ol data-sourcepos="118:3-120:269">&#x000A;<li data-sourcepos="118:3-118:153">There is a special <a data-sourcepos="118:25-118:130" href="https://docs.minizinc.dev/en/stable/lib-gecode-annotations.html#relax-and-reconstruct" rel="nofollow noreferrer noopener" target="_blank">search annotation</a> to use LNS with Gecode</li>&#x000A;<li data-sourcepos="119:3-119:228">&#x000A;<em data-sourcepos="119:6-119:22">OR Tools CP-SAT</em> solver is using naive LNS automatically when using <a data-sourcepos="119:75-119:216" href="https://github.com/google/or-tools/blob/stable/ortools/sat/docs/troubleshooting.md#improving-performance-with-multiple-workers" rel="nofollow noreferrer noopener" target="_blank">many threads</a> in parallel</li>&#x000A;<li data-sourcepos="120:3-120:269">&#x000A;<em data-sourcepos="120:6-120:15">OR Tools</em> has a special routing solver designed to solve TSP and related problems. You cand read about it <a data-sourcepos="120:113-120:180" href="https://developers.google.com/optimization/routing/tsp?hl=en" rel="nofollow noreferrer noopener" target="_blank">here</a>. The repository contains <code data-sourcepos="120:207-120:230">tsp_ortools_routing.py</code> file presenting how to use the solver.</li>&#x000A;</ol>&#x000A;</blockquote>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</main>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="js-dynamic-panel paneled-view contextual-panel gl-@container/panel !gl-absolute gl-shadow-lg @xl/content-panels:gl-w-1/2 @xl/content-panels:gl-shadow-none @xl/content-panels:!gl-relative" id="contextual-panel-portal"></div>
+</div>
+</div>
+
+</div>
+
+
+<script nonce="88jfNU+K2reWYPGHqHbhbg==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="88jfNU+K2reWYPGHqHbhbg==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+
